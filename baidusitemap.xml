@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://zcsry.cn/2023/04/02/The%20Art%20of%20Software%20Testing/</loc>
+    <lastmod>2023-04-02</lastmod>
+  </url>
+  <url>
+    <loc>https://zcsry.cn/2023/04/02/Android-project/</loc>
+    <lastmod>2023-04-02</lastmod>
+  </url>
+  <url>
     <loc>https://zcsry.cn/2023/03/28/hello-world/</loc>
-    <lastmod>2023-04-01</lastmod>
+    <lastmod>2023-04-02</lastmod>
   </url>
 </urlset> 
