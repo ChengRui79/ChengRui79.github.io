@@ -46,10 +46,10 @@
 <meta property="og:image" content="https://zcsry.cn/img/Android-project/clip_image037.gif">
 <meta property="og:image" content="https://zcsry.cn/img/Android-project/clip_image039.gif">
 <meta property="article:published_time" content="2023-04-02T11:06:21.000Z">
-<meta property="article:modified_time" content="2023-04-03T06:05:02.229Z">
+<meta property="article:modified_time" content="2023-04-03T10:28:41.572Z">
 <meta property="article:author" content="CR">
-<meta property="article:tag" content="Android">
 <meta property="article:tag" content="springboot">
+<meta property="article:tag" content="Android">
 <meta property="article:tag" content="前后端分离">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://zcsry.cn/img/Android-project/clip_image002.gif">
@@ -262,7 +262,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          9.1k 字
+          8.9k 字
         
       </span>
     
@@ -273,7 +273,7 @@
         
         
         
-          76 分钟
+          75 分钟
         
       </span>
     
@@ -407,8 +407,7 @@
 <p>3.班级成员主要对记账员记录的开支进行质疑，以及对班委成员的回复进行通过</p>
 <h3 id="1-2开发工具和工具的配合"><a href="#1-2开发工具和工具的配合" class="headerlink" title="1.2开发工具和工具的配合"></a>1.2开发工具和工具的配合</h3><p>  使用的主要开发工具有IntelliJ IDEA2021（后端spring boot项目开发），Android Studio（前端app开发），Mysql（数据库），Navicat for Mysql，夜神模拟器，华为nova7手机（真机安装运行），腾讯云轻量服务器（后端云部署）</p>
 <h2 id="2-总体设计"><a href="#2-总体设计" class="headerlink" title="2 总体设计"></a>2 总体设计</h2><h3 id="2-1设计模式"><a href="#2-1设计模式" class="headerlink" title="2.1设计模式"></a>2.1设计模式</h3><p>​    后端spring boot项目采用MVC设计模式如下图：</p>
-<p><img src="/img/Android-project/clip_image002.gif" srcset="/img/loading.gif" lazyload alt="img"></p>
-<p>图1 spring boot项目结构图</p>
+<p><img src="/img/Android-project/clip_image002.gif" srcset="/img/loading.gif" lazyload alt="spring boot项目结构图"></p>
 <h3 id="2-2Android核心组件"><a href="#2-2Android核心组件" class="headerlink" title="2.2Android核心组件"></a>2.2Android核心组件</h3><p>​    Recylerview、Glide（图片加载）、activity、fragment、Okthhp（实现客户端与服务器端通信）</p>
 <h2 id="3-详细设计"><a href="#3-详细设计" class="headerlink" title="3 详细设计"></a>3 详细设计</h2><h3 id="3-1spring-boot属性配置"><a href="#3-1spring-boot属性配置" class="headerlink" title="3.1spring boot属性配置"></a>3.1spring boot属性配置</h3><p>配置应用端口88，配置腾讯云服务器远端数据库及其密码，以及图片上传云端位置</p>
 <p><strong>server.port</strong>&#x3D;**88<br>** <strong>spring.thymeleaf.cache</strong>&#x3D;<strong>false<br> spring.datasource.name</strong>&#x3D;**spell-group-datasource<br>** <strong>spring.datasource.driverClassName</strong>&#x3D;**com.mysql.cj.jdbc.Driver<br>** <strong>spring.datasource.url</strong>&#x3D;**jdbc:mysql:&#x2F;&#x2F;49.233.46.138:3306&#x2F;jilu?useUnicode&#x3D;true&amp;serverTimezone&#x3D;Asia&#x2F;Shanghai&amp;characterEncoding&#x3D;utf8&amp;autoReconnect&#x3D;true&amp;useSSL&#x3D;false&amp;allowMultiQueries&#x3D;true<br>** <strong>spring.datasource.username</strong>&#x3D;**jilu<br>** <strong>spring.datasource.password</strong>&#x3D;<strong>12345678</strong></p>
@@ -418,12 +417,10 @@
 <p>&#x2F;&#x2F;班费列表</p>
 <p>​    public static String listAllbanfeiInfoUrl &#x3D; “&#x2F;banfeiInfo&#x2F;list”;</p>
 <h3 id="3-3云服务器配置"><a href="#3-3云服务器配置" class="headerlink" title="3.3云服务器配置"></a>3.3云服务器配置</h3><p>​    1.开放端口88</p>
-<p><img src="/img/Android-project/clip_image004.gif" srcset="/img/loading.gif" lazyload alt="img"></p>
-<p>图2 端口开放</p>
+<p><img src="/img/Android-project/clip_image004.gif" srcset="/img/loading.gif" lazyload alt=" 端口开放"></p>
 <p>  2.配置服务器相关（jdk,tomcat,数据库等相关环境安装）</p>
 <p>  3.springboot打jar包上传并启动服务器端（有两种启动方式命令1. java -jar server.jar随终端启动2. nohup java -jar server.jar后台一直运行，为节约系统资源这里采用方式1）</p>
-<p><img src="/img/Android-project/clip_image006.gif" srcset="/img/loading.gif" lazyload alt="img"></p>
-<p>图3 云服务器终端启动服务器端</p>
+<p><img src="/img/Android-project/clip_image006.gif" srcset="/img/loading.gif" lazyload alt="云服务器终端启动服务器端"></p>
 <h3 id="3-4相关功能设计（部分）"><a href="#3-4相关功能设计（部分）" class="headerlink" title="3.4相关功能设计（部分）"></a>3.4相关功能设计（部分）</h3><p>  1.登录</p>
 <p>  后端（controller层）</p>
 <figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs dart"> <span class="hljs-meta">@ApiOperation</span>(value = <span class="hljs-string">&quot;登录&quot;</span>, httpMethod = <span class="hljs-string">&quot;POST&quot;</span>, notes = <span class="hljs-string">&quot;加载数据&quot;</span>, response = ResponseData.<span class="hljs-keyword">class</span>)<br><span class="hljs-meta">@ApiImplicitParams</span>(&#123;<br>        <span class="hljs-meta">@ApiImplicitParam</span>(name = <span class="hljs-string">&quot;UserAccount&quot;</span>, value = <span class="hljs-string">&quot;账号&quot;</span>, <span class="hljs-keyword">required</span> = <span class="hljs-keyword">false</span>, paramType = <span class="hljs-string">&quot;query&quot;</span>, dataType = <span class="hljs-string">&quot;string&quot;</span>),<br>        <span class="hljs-meta">@ApiImplicitParam</span>(name = <span class="hljs-string">&quot;UserPwd&quot;</span>, value = <span class="hljs-string">&quot;密码&quot;</span>, <span class="hljs-keyword">required</span> = <span class="hljs-keyword">false</span>, paramType = <span class="hljs-string">&quot;query&quot;</span>, dataType = <span class="hljs-string">&quot;string&quot;</span>)<br>&#125;)<br><span class="hljs-meta">@RequestMapping</span>(<span class="hljs-string">&quot;login&quot;</span>)<br>public ResponseData listAll(<span class="hljs-meta">@ApiIgnore</span> <span class="hljs-built_in">String</span> demoUserAccount, <span class="hljs-meta">@ApiIgnore</span> <span class="hljs-built_in">String</span> demoUserPwd) &#123;<br>    <span class="hljs-keyword">try</span> &#123;<br>        UserInfo user = userInfoMapper.getUserByAccount(demoUserAccount);<br>        <span class="hljs-keyword">if</span> (demoUserPwd.equals(user.getPassword())) &#123;<br>            <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> ResponseData().data(user).success();<br>        &#125;<br>        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> ResponseData().fail(<span class="hljs-number">10003</span>, <span class="hljs-string">&quot;用户名或密码错误&quot;</span>);<br>    &#125; <span class="hljs-keyword">catch</span> (Exception e) &#123;<br>        e.printStackTrace();<br>        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> ResponseData().fail(<span class="hljs-number">10002</span>, <span class="hljs-string">&quot;用户不存在&quot;</span>);<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
@@ -466,47 +463,32 @@
 <p>OkGo.<String>post(Myapi.mainHost+ Myapi.listAllbanfeiInfoUrl)接口，无需传入参数，因为查询的是所有的班费列表通过Recyclerview控件展示列表</p>
 <h3 id="3-5技术难点"><a href="#3-5技术难点" class="headerlink" title="3.5技术难点"></a>3.5技术难点</h3><p>通过下载安装包，真机运行班费记录app（脱离usb限制），通过通过签名jks的方式实现。</p>
 <h2 id="4测试及出现过的问题及其解决方法"><a href="#4测试及出现过的问题及其解决方法" class="headerlink" title="4测试及出现过的问题及其解决方法"></a>4测试及出现过的问题及其解决方法</h2><h3 id="4-1测试界面"><a href="#4-1测试界面" class="headerlink" title="4.1测试界面"></a>4.1测试界面</h3><p>1.登录界面（三种身份选择）</p>
-<p><img src="/img/Android-project/clip_image008.gif" srcset="/img/loading.gif" lazyload alt="img"></p>
-<p>图4 登录界面</p>
+<p><img src="/img/Android-project/clip_image008.gif" srcset="/img/loading.gif" lazyload alt="登录界面"></p>
 <p>2.注册界面（仅可注册班级成员，记账员及班委为数据库设置）</p>
-<p><img src="/img/Android-project/clip_image010.gif" srcset="/img/loading.gif" lazyload alt="img"></p>
-<p>图5 注册页面</p>
+<p><img src="/img/Android-project/clip_image010.gif" srcset="/img/loading.gif" lazyload alt="注册界面"></p>
 <p>4.主页（记账员身份进入）</p>
-<p><img src="/img/Android-project/clip_image012.gif" srcset="/img/loading.gif" lazyload alt="img"></p>
-<p>图6 主页</p>
+<p><img src="/img/Android-project/clip_image012.gif" srcset="/img/loading.gif" lazyload alt="主页"></p>
 <p>5.记账员发布账单</p>
-<p><img src="/img/Android-project/clip_image014.gif" srcset="/img/loading.gif" lazyload alt="img"></p>
-<p>图7 记账</p>
-<p><img src="/img/Android-project/clip_image016.gif" srcset="/img/loading.gif" lazyload alt="img"></p>
-<p>图8 账单已更新</p>
+<p><img src="/img/Android-project/clip_image014.gif" srcset="/img/loading.gif" lazyload alt="记账"></p>
+<p><img src="/img/Android-project/clip_image016.gif" srcset="/img/loading.gif" lazyload alt="账单已更新"></p>
 <p>6.提出质疑</p>
-<p><img src="/img/Android-project/clip_image018.gif" srcset="/img/loading.gif" lazyload alt="img"></p>
-<p>图9 班级成员发布质疑</p>
-<p><img src="/img/Android-project/clip_image020.gif" srcset="/img/loading.gif" lazyload alt="img"></p>
-<p>图10 质疑已公布</p>
+<p><img src="/img/Android-project/clip_image018.gif" srcset="/img/loading.gif" lazyload alt=" 班级成员发布质疑"></p>
+<p><img src="/img/Android-project/clip_image020.gif" srcset="/img/loading.gif" lazyload alt="质疑已公布"></p>
 <p>6.班委回复质疑</p>
-<p><img src="/img/Android-project/clip_image022.gif" srcset="/img/loading.gif" lazyload alt="img"></p>
-<p>图11 班委回复质疑</p>
-<p><img src="/img/Android-project/clip_image024.gif" srcset="/img/loading.gif" lazyload alt="img"></p>
-<p>图12 质疑已回复</p>
+<p><img src="/img/Android-project/clip_image022.gif" srcset="/img/loading.gif" lazyload alt="班委回复质疑"></p>
+<p><img src="/img/Android-project/clip_image024.gif" srcset="/img/loading.gif" lazyload alt="质疑已回复"></p>
 <p>8.班级成员通过质疑</p>
-<p><img src="/img/Android-project/clip_image026.gif" srcset="/img/loading.gif" lazyload alt="img"></p>
-<p>图13 班级半数以上确认</p>
+<p><img src="/img/Android-project/clip_image026.gif" srcset="/img/loading.gif" lazyload alt="班级半数以上确认"></p>
 <p>9.质疑人close质疑（未超过半数班级成员确认关闭无效）</p>
-<p><img src="/img/Android-project/clip_image028.gif" srcset="/img/loading.gif" lazyload alt="img"></p>
-<p>图14 质疑人close质疑</p>
+<p><img src="/img/Android-project/clip_image028.gif" srcset="/img/loading.gif" lazyload alt="质疑人close质疑"></p>
 <p>10.质疑已close</p>
-<p><img src="/img/Android-project/clip_image030.gif" srcset="/img/loading.gif" lazyload alt="img"></p>
-<p>图15 质疑已关闭</p>
+<p><img src="/img/Android-project/clip_image030.gif" srcset="/img/loading.gif" lazyload alt="质疑已关闭"></p>
 <p>  11.真机安装包下载及运行</p>
-<p><img src="/img/Android-project/clip_image031.gif" srcset="/img/loading.gif" lazyload alt="img"><img src="/img/Android-project/clip_image033.gif" srcset="/img/loading.gif" lazyload alt="img"></p>
-<p>图16 真机安装包下载及运行 </p>
+<p><img src="/img/Android-project/clip_image031.gif" srcset="/img/loading.gif" lazyload alt="真机安装包下载及运行 "><img src="/img/Android-project/clip_image033.gif" srcset="/img/loading.gif" lazyload alt="img"></p>
 <h3 id="4-2出现的问题及解决方案"><a href="#4-2出现的问题及解决方案" class="headerlink" title="4.2出现的问题及解决方案"></a>4.2出现的问题及解决方案</h3><p>​    1.Android Studio开发的客户端打Debug包手机无法安装</p>
-<p><img src="/img/Android-project/clip_image035.gif" srcset="/img/loading.gif" lazyload alt="img"></p>
-<p>图17 安装失败</p>
+<p><img src="/img/Android-project/clip_image035.gif" srcset="/img/loading.gif" lazyload alt=" 安装失败"></p>
 <p>​    解决方案：通过签名jks生成release包，最终实现apk打包安装</p>
-<p><img src="/img/Android-project/clip_image037.gif" srcset="/img/loading.gif" lazyload alt="img"></p>
-<p>图18 生成jks文件</p>
+<p><img src="/img/Android-project/clip_image037.gif" srcset="/img/loading.gif" lazyload alt="生成jks文件"></p>
 <p>​    2.云服务器88端口无法访问（端口已开放）</p>
 <p>​    解决方案：查阅资料意识到可能是服务器内的系统放火墙未放通导致，使用systemctl stop firewalld 命令来进行关闭，最终解决问题。</p>
 <h2 id="5-总结"><a href="#5-总结" class="headerlink" title="5 总结"></a>5 总结</h2><h3 id="5-1全面总结"><a href="#5-1全面总结" class="headerlink" title="5.1全面总结"></a>5.1全面总结</h3><p>​    本实践采用前后端分离模式开发，基于spring boot的服务器端，Android Studio的客户端实现项目功能。大体实现如下功能：</p>
@@ -516,8 +498,7 @@
 <p>在此基础上进行了云部署，成功将服务器端部署到腾讯云服务器上运行，此外客户端通过jks签名打release包安装到了真机运行。</p>
 <p>本项目采用git进行版本控制，仓库地址如下:</p>
 <p><a target="_blank" rel="noopener" href="https://github.com/ChengRui79/Android-charge-account.git">https://github.com/ChengRui79/Android-charge-account.git</a></p>
-<p><img src="/img/Android-project/clip_image039.gif" srcset="/img/loading.gif" lazyload alt="img"></p>
-<p>图19 github仓库</p>
+<p><img src="/img/Android-project/clip_image039.gif" srcset="/img/loading.gif" lazyload alt="github仓库"></p>
 <h3 id="5-2未完成的部分"><a href="#5-2未完成的部分" class="headerlink" title="5.2未完成的部分"></a>5.2未完成的部分</h3><p>​    未完成的部分有：个人中心（对个人的注册信息及质疑，通过记录进行展示）；多班级支持（可实现多个班级共同使用，即分班级对进行班费使用进行记录）；记录归档功能</p>
 <h3 id="5-3收获"><a href="#5-3收获" class="headerlink" title="5.3收获"></a>5.3收获</h3><p>​    对spring boot的mvc模式开发有了更熟练的掌握，通过前后端分离的采用，使我初步接触了Android客户端与IntelliJ IDEA服务器端基于Okthhp通信的主流网络通信框架。同时也在云平台技术的使用上更加深入（这是我在腾讯云上部署的第二个项目，第一个项目是一个java web项目）相对来说在本次部署难度大了很多，但同时也觉得收获颇丰。当然在前端设计上考虑略有不足，例如在用户注册页面，role显然不适合选择，由于前期分析不足，未考虑权限的特殊性，导致注册页面设计不合理，后删去role选择功能，默认班级成员。希望在以后的学习过程中多多接触新技术，不断提升能力。</p>
 <h2 id="6参考文献"><a href="#6参考文献" class="headerlink" title="6参考文献"></a>6参考文献</h2><p>[1] Android客户端连接服务器- OKHttp的简单实用方法[ED&#x2F;OL]：<a target="_blank" rel="noopener" href="https://blog.csdn.net/m0_47761892/article/details/107630036">https://blog.csdn.net/m0_47761892/article/details/107630036</a> </p>
@@ -567,9 +548,9 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/Android/">#Android</a>
-      
         <a href="/tags/springboot/">#springboot</a>
+      
+        <a href="/tags/Android/">#Android</a>
       
         <a href="/tags/%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB/">#前后端分离</a>
       
