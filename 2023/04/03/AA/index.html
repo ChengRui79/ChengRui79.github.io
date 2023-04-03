@@ -1,0 +1,1182 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="CR">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="基于拼团基本模式功能开发的一个AA拼团系统">
+<meta property="og:type" content="article">
+<meta property="og:title" content="AA">
+<meta property="og:url" content="https://zcsry.cn/2023/04/03/AA/index.html">
+<meta property="og:site_name" content="One computer paddler&#39;s blog">
+<meta property="og:description" content="基于拼团基本模式功能开发的一个AA拼团系统">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://zcsry.cn/img/AA/clip_image002.png">
+<meta property="og:image" content="https://zcsry.cn/img/AA/clip_image004.png">
+<meta property="og:image" content="https://zcsry.cn/img/AA/clip_image006.jpg">
+<meta property="og:image" content="https://zcsry.cn/img/AA/clip_image008.png">
+<meta property="og:image" content="https://zcsry.cn/img/AA/clip_image010.png">
+<meta property="og:image" content="https://zcsry.cn/img/AA/clip_image012.jpg">
+<meta property="og:image" content="https://zcsry.cn/img/AA/clip_image014.png">
+<meta property="og:image" content="https://zcsry.cn/img/AA/clip_image016.png">
+<meta property="og:image" content="https://zcsry.cn/img/AA/clip_image018.png">
+<meta property="og:image" content="https://zcsry.cn/img/AA/clip_image020.png">
+<meta property="og:image" content="https://zcsry.cn/img/AA/clip_image022.png">
+<meta property="og:image" content="https://zcsry.cn/img/AA/clip_image024.png">
+<meta property="og:image" content="https://zcsry.cn/img/AA/clip_image026.png">
+<meta property="og:image" content="https://zcsry.cn/img/AA/clip_image028.png">
+<meta property="og:image" content="https://zcsry.cn/img/AA/clip_image030.png">
+<meta property="og:image" content="https://zcsry.cn/img/AA/clip_image032.png">
+<meta property="og:image" content="https://zcsry.cn/img/AA/clip_image034.png">
+<meta property="og:image" content="https://zcsry.cn/img/AA/clip_image036.png">
+<meta property="og:image" content="https://zcsry.cn/img/AA/clip_image038.png">
+<meta property="og:image" content="https://zcsry.cn/img/AA/clip_image040.png">
+<meta property="og:image" content="https://zcsry.cn/img/AA/clip_image042.png">
+<meta property="og:image" content="https://zcsry.cn/img/AA/clip_image043.png">
+<meta property="og:image" content="https://zcsry.cn/img/AA/clip_image045.png">
+<meta property="og:image" content="https://zcsry.cn/img/AA/clip_image047.png">
+<meta property="og:image" content="https://zcsry.cn/img/AA/clip_image049.png">
+<meta property="article:published_time" content="2023-04-03T08:56:32.000Z">
+<meta property="article:modified_time" content="2023-04-03T10:17:01.235Z">
+<meta property="article:author" content="CR">
+<meta property="article:tag" content="springboot">
+<meta property="article:tag" content="java">
+<meta property="article:tag" content="AA拼团">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://zcsry.cn/img/AA/clip_image002.png">
+  
+  
+  
+  <title>AA - One computer paddler&#39;s blog</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"zcsry.cn","root":"/","version":"1.9.4","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"NZzmWHo4vLeDsTh3MaGJBfT1-gzGzoHsz","app_key":"EaF7VkHeBkgVwTLy7IHYmPIs","server_url":"https://nzzmwho4.lc-cn-n1-shared.com","path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>CR</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="AA"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2023-04-03 16:56" pubdate>
+          2023年4月3日 下午
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          9.6k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          80 分钟
+        
+      </span>
+    
+
+    
+    
+      
+        <span id="leancloud-page-views-container" class="post-meta" style="display: none">
+          <i class="iconfont icon-eye" aria-hidden="true"></i>
+          <span id="leancloud-page-views"></span> 次
+        </span>
+        
+      
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">AA</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h1 id="第1章-绪论"><a href="#第1章-绪论" class="headerlink" title="第1章 绪论"></a>第1章 绪论</h1><h2 id="1-1-引言"><a href="#1-1-引言" class="headerlink" title="1.1  引言"></a>1.1  引言</h2><p>随着经济快速发展，人民的精神生活日益丰富，对健康的意识也提高了，因此参加活动的意愿十分强烈。在此基础上，我们小组选择了拼团系统的制作和学习，借此锻炼我们的实际问题分析解决和团队协作能力。</p>
+<h2 id="1-2-研究内容"><a href="#1-2-研究内容" class="headerlink" title="1.2  研究内容"></a>1.2  研究内容</h2><p>拼团–团队活动AA 制</p>
+<h3 id="1-2-1-组团"><a href="#1-2-1-组团" class="headerlink" title="1.2.1 组团"></a>1.2.1 组团</h3><p>  （1）团长创建(组建) 团队并发布活动消息（时间、起点、主要内容等）；</p>
+<p>（2）加入团员（团员申请参加活动）；</p>
+<p>（3）（团长）确定团队成立，并通知参与人；</p>
+<p>（4）确定团队活动的起始时间，交纳团费（可多次交纳）；</p>
+<h3 id="1-2-2-团队活动"><a href="#1-2-2-团队活动" class="headerlink" title="1.2.2 团队活动"></a>1.2.2 团队活动</h3><p>（1）每次团队活动记录参加人员，活动费用参与人员均摊；</p>
+<p>（2）活动过程中根据需要追加AA 费用，也支持某团员独立追加费用；</p>
+<p>（3）活动结束，计算团队成员分推费用；</p>
+<p>（4）支持输出帐单，并导出到EXCEL 表格中。</p>
+<p>（5）活动结束，生成活动报告。</p>
+<h3 id="1-2-3-开发工具"><a href="#1-2-3-开发工具" class="headerlink" title="1.2.3 开发工具"></a>1.2.3 开发工具</h3><p>（1）后端采用MVC设计模式，使用SpringBoot+MyBatis plus框架，数据库采用MySQL；</p>
+<p>（2）前端采用Bootstrap，视图界面美观；</p>
+<p>（3）使用Docker进行部署；</p>
+<p>（4）系统运行以微服务的方式运行，微服务框架采用Spring Cloud     </p>
+<p>（5）系统项目源码通过git进行管理；</p>
+<h1 id="第2章-需求分析"><a href="#第2章-需求分析" class="headerlink" title="第2章 需求分析"></a>第2章 需求分析</h1><h2 id="2-1-业务流程分析"><a href="#2-1-业务流程分析" class="headerlink" title="2.1      业务流程分析"></a>2.1      业务流程分析</h2><h3 id="2-1-1-基于实验需求的业务分析"><a href="#2-1-1-基于实验需求的业务分析" class="headerlink" title="2.1.1  基于实验需求的业务分析"></a>2.1.1  基于实验需求的业务分析</h3><p>⑴ 组团</p>
+<p>团长创建新团，编辑团队信息，需要一个创建活动页面，提供信息填写与提交。团员申请参加活动需要在首页活动列表增加一个参加活动按钮，触发后添加团员信息到参团记录表。</p>
+<p>⑵ 团队活动</p>
+<p>在导航栏加入参团记录，实现每次团队活动记录参加人员，在团长的管理活动页面添加活动起始按钮以及账单生成按钮，实现AA制。成员可以在管理活动页面（仅参加的活动）独立追加团费，追加费用计入总费用和AA计算，团长结束活动后，打印生成活动报告和账单明细。</p>
+<h3 id="2-1-2-业务流程图及其说明"><a href="#2-1-2-业务流程图及其说明" class="headerlink" title="2.1.2  业务流程图及其说明"></a>2.1.2  业务流程图及其说明</h3><p><img src="/img/AA/clip_image002.png" srcset="/img/loading.gif" lazyload alt="img"></p>
+<p>图2.1 系统结构图</p>
+<p>流程说明：首先以游客身份进入系统，可预览团队信息，当用户登录（注册，登录）账户后，可进入拼团系统首页，普通团员有3种操作，分别是：①加入团队：可以看到已创建的团队活动，可以选择加入团队；②创建团队：自己成为团长，输入团队信息创建，获得管理活动权限；③管理团队：创建团队自动成为团长，管理团队只能管理自己创建的团队，获得修改、结束活动，打印活动报告和账单权限；④缴纳团费：可以为自己缴费也可以追加团费，缴费后可以通过AA制导出活动账单到Excel。</p>
+<h2 id="2-2-系统用例分析"><a href="#2-2-系统用例分析" class="headerlink" title="2.2      系统用例分析"></a>2.2      系统用例分析</h2><p><img src="/img/AA/clip_image004.png" srcset="/img/loading.gif" lazyload alt="img"></p>
+<p>图2.2 系统用例图</p>
+<h1 id="第3章-概要设计"><a href="#第3章-概要设计" class="headerlink" title="第3章 概要设计"></a>第3章 概要设计</h1><h2 id="3-1-总体架构"><a href="#3-1-总体架构" class="headerlink" title="3.1    总体架构"></a>3.1    总体架构</h2><h3 id="3-1-1-总体架构图"><a href="#3-1-1-总体架构图" class="headerlink" title="3.1.1 总体架构图"></a>3.1.1 总体架构图</h3><p><img src="/img/AA/clip_image006.jpg" srcset="/img/loading.gif" lazyload alt="img"></p>
+<p>图3.1.1 系统总体架构图</p>
+<h2 id="3-2-项目结构"><a href="#3-2-项目结构" class="headerlink" title="3.2      项目结构"></a>3.2      项目结构</h2><h3 id="3-2-1-项目结构图"><a href="#3-2-1-项目结构图" class="headerlink" title="3.2.1    项目结构图"></a>3.2.1    项目结构图</h3><p><img src="/img/AA/clip_image008.png" srcset="/img/loading.gif" lazyload alt="img"></p>
+<p>src&#x2F;main&#x2F;java结构说明</p>
+<p>common 存放公共的常量类，自定义异常</p>
+<p>config 存放配置类，相当于xml配置文件</p>
+<p>controller 存控制器，负责接收http请求，转发请求，封装业务数据</p>
+<p>entity存实体类, 用lombok插件生成set get方法</p>
+<p>mapper 数据接口访问层DAO文件</p>
+<p>service 存业务接口service&#x2F;impl下存放实现类</p>
+<p>utils存工具类</p>
+<p>Application.java是系统的启动类</p>
+<p>src&#x2F;main&#x2F;resources下存放配置文件其中</p>
+<p>application.yml是主要配置文件</p>
+<p>webapp&#x2F;page存放jsp页面</p>
+<p>webapp&#x2F;static是存放js ,css ,图片等静态资源的</p>
+<h3 id="3-2-2-项目实现功能"><a href="#3-2-2-项目实现功能" class="headerlink" title="3.2.2    项目实现功能"></a>3.2.2    项目实现功能</h3><p>用户注册登录：</p>
+<p> login.jsp是登陆页面，用户输入用户名密码进行登录，没有账户的用户点击注册跳转到register.jsp，进行注册，注册成功会自动跳转到登录页面。</p>
+<p>加入团队：</p>
+<p> team&#x2F;list.jsp里布置了参加活动按钮，点击即可参与。</p>
+<p>创建团队：</p>
+<p> 选择导航栏的创建活动，输入相关信息提交即可创建。</p>
+<p>管理活动：</p>
+<p> manage.jsp页面提供修改活动、确定活动、结束活动、生成报告、帐单列表、追加费用按钮实现相应功能。</p>
+<p>参团列表：</p>
+<p> joinRecord&#x2F;list.jsp页面展示参团人员记录。</p>
+<p>AA制团费：</p>
+<p> bill.list页面展示账单明细并提供导出excel按钮。</p>
+<p>账单导出excel：</p>
+<p> BillController进行跳转实现本地下载。</p>
+<h3 id="3-2-3-总体流程"><a href="#3-2-3-总体流程" class="headerlink" title="3.2.3 总体流程"></a>3.2.3 总体流程</h3><p> 新用户注册后进行登录，老用户输入用户名&#x2F;手机号进行登录，进入系统界面后可以选择团队加入，也可创建新的团队，成为新团的团长，拥有修改团队信息、生成活动报告、账单等权限，所有团员都可通过参团记录查看各人的拼团情况。活动刚成立处于新建状态，由团长决定活动开始时间和结束时间，活动结束后可生成活动账单，查看AA费用，团员进行缴纳，并支持团长和团员独立追加费用，活动结束后可退出系统。</p>
+<h1 id="第4章-数据库设计"><a href="#第4章-数据库设计" class="headerlink" title="第4章 数据库设计"></a>第4章 数据库设计</h1><h2 id="4-1-数据库选型"><a href="#4-1-数据库选型" class="headerlink" title="4.1 　数据库选型"></a>4.1 　数据库选型</h2><h3 id="4-1-1-几种数据库比较"><a href="#4-1-1-几种数据库比较" class="headerlink" title="4.1.1 　几种数据库比较"></a>4.1.1 　几种数据库比较</h3><p>随着数据库管理系统技术的成熟，目前比较流行的数据库有MySQL、SQL Server、Oracle、Sybase等，而我们本次设计所使用的MySQL，它是最受欢迎的开源SQL数据库管理系统。MySQL是一个快速的、多线程、多用户和健壮的SQL数据库服务器。MySQL服务器支持关键人物、重负载生产系统的使用，也可以将它嵌入到一个大配置的软件中去。而与其他的数据库相比较，MySQL有如下的一些优点：</p>
+<p>1）MySQL是一个关系数据库管理系统</p>
+<p>2）MySQL是开源的</p>
+<p>3）MySQL服务器是一个快速的、可靠的和易于使用的数据库服务器</p>
+<p>4）MySQL服务器工作在客户&#x2F;服务器或嵌入系统中</p>
+<p>5）有大量的MySQL软件可以使用</p>
+<h3 id="4-1-2-MySQL数据库"><a href="#4-1-2-MySQL数据库" class="headerlink" title="4.1.2 　MySQL数据库"></a>4.1.2 　MySQL数据库</h3><p>  MySQL是一个完全免费的数据库系统，是一个关系型数据库管理系统，由瑞典MySQL AB 公司开发，目前属于Oracle公司。MySQL是一种关联数据库管理系统，关联数据库将数据保存在不同的表中，而不是将所有数据放在一个大仓库内，这样就增加了速度并提高了灵活性。</p>
+<h3 id="4-1-3-数据库安全"><a href="#4-1-3-数据库安全" class="headerlink" title="4.1.3 数据库安全"></a>4.1.3 数据库安全</h3><p> 我们采用MD5实现数据库用户表密码的单项加密，先将原来的数据变成一个16个字节的数组，然后将这个长度为16的字节数组用16进制表示，这个16进制的字符串就是加密最后的结果。</p>
+<p><img src="/img/AA/clip_image010.png" srcset="/img/loading.gif" lazyload alt="img"></p>
+<h2 id="4-2-数据库设计"><a href="#4-2-数据库设计" class="headerlink" title="4.2    数据库设计"></a>4.2    数据库设计</h2><p><img src="/img/AA/clip_image012.jpg" srcset="/img/loading.gif" lazyload alt="img"></p>
+<p>图4.1 数据库ER图</p>
+<p>表4.1 用户表</p>
+<table>
+<thead>
+<tr>
+<th>表名</th>
+<th>用户表 user</th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>说明</td>
+<td>记录用户的身份信息以及对系统的相关设置</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>字段名</td>
+<td>数据类型</td>
+<td>是否为空</td>
+<td>是否为主键</td>
+<td>说明</td>
+</tr>
+<tr>
+<td>id</td>
+<td>INTEGER</td>
+<td>N</td>
+<td>Y</td>
+<td>用户唯一标志号</td>
+</tr>
+<tr>
+<td>username</td>
+<td>VARCHAR(50)</td>
+<td>Y</td>
+<td>N</td>
+<td>用户昵称</td>
+</tr>
+<tr>
+<td>password</td>
+<td>VARCHAR(255)</td>
+<td>Y</td>
+<td>N</td>
+<td>用户密码</td>
+</tr>
+<tr>
+<td>real_name</td>
+<td>VARCHAR(50)</td>
+<td>Y</td>
+<td>N</td>
+<td>用户真实姓名</td>
+</tr>
+<tr>
+<td>phone</td>
+<td>VARCHAR(255)</td>
+<td>Y</td>
+<td>N</td>
+<td>用户的电话号码</td>
+</tr>
+<tr>
+<td>role</td>
+<td>INTEGER</td>
+<td>Y</td>
+<td>N</td>
+<td>用户是否为管理员</td>
+</tr>
+</tbody></table>
+<p>表4.2 团队表</p>
+<table>
+<thead>
+<tr>
+<th>表名</th>
+<th>团队表team</th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>说明</td>
+<td>所选团队信息</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>字段名</td>
+<td>数据类型</td>
+<td>是否为空</td>
+<td>是否为主键</td>
+<td>说明</td>
+</tr>
+<tr>
+<td>id</td>
+<td>INTEGER</td>
+<td>N</td>
+<td>Y</td>
+<td>团队</td>
+</tr>
+<tr>
+<td>team_name</td>
+<td>VARCHAR(50)</td>
+<td>Y</td>
+<td>N</td>
+<td>团队名称</td>
+</tr>
+<tr>
+<td>team_leader</td>
+<td>INTEGER</td>
+<td>Y</td>
+<td>N</td>
+<td>团长的id</td>
+</tr>
+<tr>
+<td>start_time</td>
+<td>VARCHAR(50)</td>
+<td>Y</td>
+<td>N</td>
+<td>开始时间</td>
+</tr>
+<tr>
+<td>end_time</td>
+<td>VARCHAR(50)</td>
+<td>Y</td>
+<td>N</td>
+<td>结束时间</td>
+</tr>
+<tr>
+<td>state</td>
+<td>INTEGER</td>
+<td>Y</td>
+<td>N</td>
+<td>团队建立状态</td>
+</tr>
+<tr>
+<td>cost</td>
+<td>DECIMAL（10，2）</td>
+<td>Y</td>
+<td>N</td>
+<td>团队总消费</td>
+</tr>
+</tbody></table>
+<p>表4.3 参团记录表</p>
+<table>
+<thead>
+<tr>
+<th>表名</th>
+<th>用户表 join_record</th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>说明</td>
+<td>参团人员记录</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>字段名</td>
+<td>数据类型</td>
+<td>是否为空</td>
+<td>是否为主键</td>
+<td>说明</td>
+</tr>
+<tr>
+<td>id</td>
+<td>INTEGER</td>
+<td>N</td>
+<td>Y</td>
+<td>用户唯一标志号</td>
+</tr>
+<tr>
+<td>team_id</td>
+<td>INTEGER</td>
+<td>Y</td>
+<td>N</td>
+<td>团队序号</td>
+</tr>
+<tr>
+<td>user_id</td>
+<td>INTEGER</td>
+<td>Y</td>
+<td>N</td>
+<td>用户序号</td>
+</tr>
+</tbody></table>
+<p>表4.4 账单表</p>
+<table>
+<thead>
+<tr>
+<th>表名</th>
+<th>bill</th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>说明</td>
+<td>账单</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>字段名</td>
+<td>数据类型</td>
+<td>是否为空</td>
+<td>是否为主键</td>
+<td>说明</td>
+</tr>
+<tr>
+<td>id</td>
+<td>INTEGER</td>
+<td>N</td>
+<td>Y</td>
+<td>用户唯一标志号</td>
+</tr>
+<tr>
+<td>user_id</td>
+<td>INTEGER</td>
+<td>Y</td>
+<td>N</td>
+<td>用户昵称</td>
+</tr>
+<tr>
+<td>team_id</td>
+<td>INTEGER</td>
+<td>Y</td>
+<td>N</td>
+<td>团队名称</td>
+</tr>
+<tr>
+<td>cost</td>
+<td>DECIMAL(10,2)</td>
+<td>Y</td>
+<td>N</td>
+<td>费用</td>
+</tr>
+<tr>
+<td>remark</td>
+<td>VARCHAR(255)</td>
+<td>Y</td>
+<td>N</td>
+<td>备注</td>
+</tr>
+</tbody></table>
+<h1 id="第5章-详细设计"><a href="#第5章-详细设计" class="headerlink" title="第5章 详细设计"></a>第5章 详细设计</h1><h2 id="5-1-数据访问层设计"><a href="#5-1-数据访问层设计" class="headerlink" title="5.1 数据访问层设计"></a>5.1 数据访问层设计</h2><p>表的操作（CURD）:</p>
+<p>项目利用MybatisPlus简化开发，启动即会注入基本CURD，直接面向对象操作，MP内置通用mapper、通用service，每个service都继承IService，在IService里定义了各种方法，帮助我们用少量配置实现大部分CURD操作。</p>
+<p>我们只需要创建TeamMapper、UserMapper等接口，并继承BaseMapper接口，不需要创建SQL映射文件。</p>
+<h2 id="5-2-表示层设计"><a href="#5-2-表示层设计" class="headerlink" title="5.2 表示层设计"></a>5.2 表示层设计</h2><p>（1）登录注册页面设计</p>
+<p>创建一个login的jsp页面，在里面添加一个form表单，在里面设计用户名、密码输入文本框，同时也可以采用手机号登录，以及登录跳转按钮，再添加一个注册用户信息的模态框。</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;margin&lt;form style=&quot;</span><span class="hljs-attr">margin-top:</span> <span class="hljs-attr">-30px</span>;&quot;&gt;</span><br>   <span class="hljs-tag">&lt;<span class="hljs-name">center</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>登录<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">center</span>&gt;</span><br>   <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;username&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-control uname&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;用户名&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;&quot;</span>/&gt;</span><br>   <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;password&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;password&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-control pword m-b&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;密码&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;&quot;</span>/&gt;</span><br>   <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;登录&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-primary btn-block&quot;</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;login()&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">input</span>&gt;</span><br>                   <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/signup&quot;</span>&gt;</span>注册<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;margin-top: -30px;&quot;</span>&gt;</span><br>   <span class="hljs-tag">&lt;<span class="hljs-name">center</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>登录<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">center</span>&gt;</span><br>   <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;phone&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-control uname&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;手机号&quot;</span> /&gt;</span><br>   <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;password&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;password2&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-control pword m-b&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;密码&quot;</span> /&gt;</span><br>   <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;登录&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-primary btn-block&quot;</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;loginByPhone()&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">input</span>&gt;</span><br>                   <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/signup&quot;</span>&gt;</span>注册<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span><br></code></pre></td></tr></table></figure>
+
+<p>（2）创建活动页面设计</p>
+<p>在页面展示的中间有一个创建活动的按钮，点击则跳转到创建活动的信息输入页面，通过输入活动名称，费用，开始时间，结束时间，点击提交按钮则创建成功。</p>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs routeros">&lt;input <span class="hljs-attribute">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-string">&quot;活动名称&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-string">&quot;form-control&quot;</span> <span class="hljs-attribute">name</span>=<span class="hljs-string">&quot;teamName&quot;</span> <span class="hljs-attribute">id</span>=<span class="hljs-string">&quot;teamName&quot;</span> <span class="hljs-attribute">value</span>=<span class="hljs-string">&quot;<span class="hljs-variable">$&#123;data.teamName&#125;</span>&quot;</span>&gt;<br>&lt;input <span class="hljs-attribute">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-string">&quot;费用&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-string">&quot;form-control&quot;</span> <span class="hljs-attribute">name</span>=<span class="hljs-string">&quot;cost&quot;</span> <span class="hljs-attribute">id</span>=<span class="hljs-string">&quot;cost&quot;</span> <span class="hljs-attribute">value</span>=<span class="hljs-string">&quot;<span class="hljs-variable">$&#123;data.cost&#125;</span>&quot;</span>&gt;<br>&lt;input <span class="hljs-attribute">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-string">&quot;开始时间&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-string">&quot;form-control&quot;</span> <span class="hljs-attribute">name</span>=<span class="hljs-string">&quot;startTime&quot;</span> <span class="hljs-attribute">id</span>=<span class="hljs-string">&quot;startTime&quot;</span> <span class="hljs-attribute">value</span>=<span class="hljs-string">&quot;<span class="hljs-variable">$&#123;data.startTime&#125;</span>&quot;</span>&gt;<br>&lt;input <span class="hljs-attribute">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-string">&quot;结束时间&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-string">&quot;form-control&quot;</span> <span class="hljs-attribute">name</span>=<span class="hljs-string">&quot;endTime&quot;</span> <span class="hljs-attribute">id</span>=<span class="hljs-string">&quot;endTime&quot;</span> <span class="hljs-attribute">value</span>=<span class="hljs-string">&quot;<span class="hljs-variable">$&#123;data.endTime&#125;</span>&quot;</span>&gt;<br>&lt;button <span class="hljs-attribute">class</span>=<span class="hljs-string">&quot;btn btn btn-sm btn-primary&quot;</span> <span class="hljs-attribute">id</span>=<span class="hljs-string">&quot;btn&quot;</span>&gt;提交&lt;/button&gt;<br></code></pre></td></tr></table></figure>
+
+<p>（3）参团记录页面设计</p>
+<p>   在页面展示的右边有一个参团记录的按钮，点击则跳转到参团记录页面，该页面可以看见活动ID，活动名称，以及团员姓名，同时表格的右上方也有刷新按钮，可以实时查看参团记录。</p>
+<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs applescript">&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">&quot;table-responsive&quot;</span>&gt;<br>           &lt;table <span class="hljs-built_in">id</span>=<span class="hljs-string">&quot;table&quot;</span>&gt;<br>           &lt;/table&gt;<br>  &lt;/<span class="hljs-keyword">div</span>&gt;<br></code></pre></td></tr></table></figure>
+
+<p>（4）活动列表页面设计</p>
+<p>   在页面展示的左边有一个活动列表的按钮，点击则跳转到活动列表页面，该页面可以查看活动ID，活动名称，费用，开始时间，结束时间以及状态，同时也可以进行参加活动这一操作，表格的右上方也有着刷新按钮，确保活动的最新情况。</p>
+<p>   同（3），自适应表格。</p>
+<p>（5）管理活动页面设计</p>
+<p>  该页面在活动列表的操作基础上新增了修改活动，确定成立，结束活动，生成报告，账单列表，追加费用等功能，同时也包含着刷新按钮，以此确保活动的最新情况。</p>
+<figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><code class="hljs pgsql">events: &#123;               // 注册按钮组事件<br>    <span class="hljs-string">&#x27;click #edit&#x27;</span>: <span class="hljs-keyword">function</span> (event, <span class="hljs-keyword">value</span>, <span class="hljs-keyword">row</span>, <span class="hljs-keyword">index</span>) &#123;<br>        edit(<span class="hljs-keyword">row</span>.id)<br>    &#125;,<br>    <span class="hljs-string">&#x27;click #setup&#x27;</span>: <span class="hljs-keyword">function</span> (event, <span class="hljs-keyword">value</span>, <span class="hljs-keyword">row</span>, <span class="hljs-keyword">index</span>) &#123;<br>        updateState(<span class="hljs-keyword">row</span>.id, <span class="hljs-number">2</span>)<br>    &#125;,<br>    <span class="hljs-string">&#x27;click #finish&#x27;</span>: <span class="hljs-keyword">function</span> (event, <span class="hljs-keyword">value</span>, <span class="hljs-keyword">row</span>, <span class="hljs-keyword">index</span>) &#123;<br>        updateState(<span class="hljs-keyword">row</span>.id, <span class="hljs-number">3</span>)<br>    &#125;,<br>    <span class="hljs-string">&#x27;click #appendCost&#x27;</span>: <span class="hljs-keyword">function</span> (event, <span class="hljs-keyword">value</span>, <span class="hljs-keyword">row</span>, <span class="hljs-keyword">index</span>) &#123;<br>        appendCost(<span class="hljs-keyword">row</span>.id)<br>    &#125;,<br>    <span class="hljs-string">&#x27;click #genReport&#x27;</span>: <span class="hljs-keyword">function</span> (event, <span class="hljs-keyword">value</span>, <span class="hljs-keyword">row</span>, <span class="hljs-keyword">index</span>) &#123;<br>        genReport(<span class="hljs-keyword">row</span>.id)<br>    &#125;,<br>    <span class="hljs-string">&#x27;click #billList&#x27;</span>: <span class="hljs-keyword">function</span> (event, <span class="hljs-keyword">value</span>, <span class="hljs-keyword">row</span>, <span class="hljs-keyword">index</span>) &#123;<br>        billList(<span class="hljs-keyword">row</span>.id)<br>    &#125;,<br>    <span class="hljs-string">&#x27;click #excel&#x27;</span>: <span class="hljs-keyword">function</span> (event, <span class="hljs-keyword">value</span>, <span class="hljs-keyword">row</span>, <span class="hljs-keyword">index</span>) &#123;<br>        excel(<span class="hljs-keyword">row</span>.id)<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h2 id="5-3-业务逻辑层设计"><a href="#5-3-业务逻辑层设计" class="headerlink" title="5.3 业务逻辑层设计"></a>5.3 业务逻辑层设计</h2><p> （1）用户登录</p>
+<p>login.jsp发送请求通过@PostMapping(“&#x2F;login”)找到CommonController的login方法，用mybatisplus提供的方法查询用户表，把查询结果放到httpSession里，方便页面使用。</p>
+<p> （2）加入团队</p>
+<p>  用户登陆进入系统后，点击“参加活动”按钮，该成员会自动加入到团队中，并将用户的信息保存到join_record表中,在JoinRecordController中添加注解，把用户提交的请求通过对url的匹配，分配给List，进行处理并返回结果。</p>
+<p> （3）创建团队</p>
+<p>  用户点击创建团队跳转到teamAdd.jsp，输入新团队相关信息进行创建。</p>
+<p> （4）管理团队</p>
+<p>  用户只可以对自己创建的团队进行信息修改和数据查看，TeamController中根据函数需要的url返回操作成功的消息或者无权操作的提示或者访问对应jsp文件。</p>
+<p> （5）AA缴费</p>
+<p>  请求通过 @PostMapping(“team&#x2F;updateState”)找到TeamController的updateState方法，业务是判断把团队状态修改为结束时，用总团费除以总人数，得到AA制每人的团费，存到账单表。</p>
+<p> （6）账单导出</p>
+<p>在进入帐单列表界面后，点击导出账单，在BillController中进行跳转，实现本地账单下载。请求通过@GetMapping(“&#x2F;bill&#x2F;exportExcel”)找到BillController的exportExcel方法，先查出该团队的账单list，然后设置keys(字段名数组)，columnNames(excel表头)，两者是一一对应的，然后循环账单list, 填充表格，然后调用ExcelUtil.downloadExcel方法导出excel，底层是通过调用apache的POI组件实现的。</p>
+<h2 id="5-4团队合作设计过程实现（git进行下的版本管理）"><a href="#5-4团队合作设计过程实现（git进行下的版本管理）" class="headerlink" title="5.4团队合作设计过程实现（git进行下的版本管理）"></a>5.4团队合作设计过程实现（git进行下的版本管理）</h2><p>计划利用git进行项目的版本管理，专项负责人已掌握通过vscode进行git的分支管理技术，例如git branch xx(创建分支) , git checkout xx(切换分支), git mergexx(项目合并)等操作.因为部分组员在git官网下载的64位版本被系统识别不适用，且尝试与组长沟通解决未果，所以本团队共同商议决定统一将自己实现的部分上交组长，由组长试运行检验，接着通过腾讯会议将已完成部分交付组员并部署下一步各自任务，让团队可以通过共同讨论，参与，实现前后端的功能衔接，最终分别于7.4，7.7，7.9发布三个版本的项目（最终链接已附在目录下方）。为弥补本团队因特殊原因无法完美实现git版本管理功能的遗憾，本团队对此项目的开发进行了开发日志管理，下附开发日志。</p>
+<p><img src="/img/AA/clip_image014.png" srcset="/img/loading.gif" lazyload alt="img"></p>
+<h1 id="第六章-测试报告"><a href="#第六章-测试报告" class="headerlink" title="第六章 测试报告"></a>第六章 测试报告</h1><h2 id="6-1-功能检验"><a href="#6-1-功能检验" class="headerlink" title="6.1 功能检验"></a>6.1 功能检验</h2><p>(1)登录页面</p>
+<p><img src="/img/AA/clip_image016.png" srcset="/img/loading.gif" lazyload alt="登录页面"></p>
+<p>⑵ 注册页面</p>
+<p><img src="/img/AA/clip_image018.png" srcset="/img/loading.gif" lazyload alt="注册页面"></p>
+<p>(3)   系统首页</p>
+<p><img src="/img/AA/clip_image020.png" srcset="/img/loading.gif" lazyload alt="系统首页"></p>
+<p>(4)   团长页面</p>
+<p><img src="/img/AA/clip_image022.png" srcset="/img/loading.gif" lazyload alt="团长页面"></p>
+<p>(5)   团员页面</p>
+<p><img src="/img/AA/clip_image024.png" srcset="/img/loading.gif" lazyload alt="团员页面"></p>
+<p>不是自己加入的团：</p>
+<p><img src="/img/AA/clip_image026.png" srcset="/img/loading.gif" lazyload alt="不是自己加入的团"></p>
+<p>(6)   创建团队页面</p>
+<p><img src="/img/AA/clip_image028.png" srcset="/img/loading.gif" lazyload alt="创建团队页面"></p>
+<p><img src="/img/AA/clip_image030.png" srcset="/img/loading.gif" lazyload alt="创建团队页面"></p>
+<p>(7)   开始&#x2F;结束活动页面</p>
+<p><img src="/img/AA/clip_image032.png" srcset="/img/loading.gif" lazyload alt="开始活动页面"></p>
+<p><img src="/img/AA/clip_image034.png" srcset="/img/loading.gif" lazyload alt="结束活动页面"></p>
+<p>(8)   追加费用页面</p>
+<p><img src="/img/AA/clip_image036.png" srcset="/img/loading.gif" lazyload alt="追加费用页面"></p>
+<p><img src="/img/AA/clip_image038.png" srcset="/img/loading.gif" lazyload alt="追加费用页面"></p>
+<p>(9)   缴费页面</p>
+<p><img src="/img/AA/clip_image040.png" srcset="/img/loading.gif" lazyload alt="缴费页面"></p>
+<p>(10)   AA制账单页面</p>
+<p><img src="/img/AA/clip_image042.png" srcset="/img/loading.gif" lazyload alt="AA制账单页面"></p>
+<p>(11)   数据库密码安全页面</p>
+<p><img src="/img/AA/clip_image043.png" srcset="/img/loading.gif" lazyload alt="数据库密码安全页面"></p>
+<p>(12)   导出excel页面</p>
+<p><img src="/img/AA/clip_image045.png" srcset="/img/loading.gif" lazyload alt="导出excel页面"></p>
+<h1 id="结-论"><a href="#结-论" class="headerlink" title="结 论"></a>结 论</h1><h2 id="1、任务完成情况"><a href="#1、任务完成情况" class="headerlink" title="1、任务完成情况"></a>1、任务完成情况</h2><p>（1）登陆注册功能都可以实现</p>
+<p>（2）团长能够创建活动，但是没有实现通知团员功能</p>
+<p>（3）团员可以申请加入活动</p>
+<p>（4）缴纳团费，模拟缴费，AA制缴费均以实现</p>
+<p>（5）用户可以参加多个活动，且每次团队活动记录参加人员</p>
+<p>（6）成功实现将活动账单导入到Excel表格中</p>
+<p>（7）活动结束后可以生成活动报告</p>
+<p>（7）未能实现Docker部署和以微服务方式运行</p>
+<h2 id="2、问题总结"><a href="#2、问题总结" class="headerlink" title="2、问题总结"></a>2、问题总结</h2><p>（2）docker已实现将项目部署上传到我们租借的阿里云服务器，但是未能成功运行springboot项目，已尝试百度常用解决办法（关闭防火墙，重启docker，修改登录拦截器）最终依旧未能实现运行，采用本地localhost运行。</p>
+<p><img src="/img/AA/clip_image047.png" srcset="/img/loading.gif" lazyload alt="img"></p>
+<p><img src="/img/AA/clip_image049.png" srcset="/img/loading.gif" lazyload alt="img"></p>
+<p>（3）考虑到指导老师于7号提出的建议，特决定对用户表的password实现保护，即采用md5技术实现对其单向加密。</p>
+<p>（4）关于git的版本管理，我们进行了三次大更新，分别完善了其前端页面，AA机制等已上传到github</p>
+<p>（2）对MySQL的认知更深刻了，对其存储、索引、优化等方面都有了一定的掌握。</p>
+<p>（3）经过这次实验，对于MyBatis—Plus的强大功能有了更深层次的认识，采用Maven插件快速生成了Mapper、Model、Service、Controller代码，使用起来相较MyBatis而言更加便捷。</p>
+<p>(2) 使用Spring boot报错时，难以定位问题所在；</p>
+<p>(3) 项目的数据传输较为复杂，我经常弄混或忘记； </p>
+<p>(4) 新学习到了导出账单的功能实现；</p>
+<p>(5) 协助编写前端也让我学到很多，例如thymeleaf,提高了页面、代码的复用性，以及对    jQuery的ajax方法的熟悉；</p>
+<p>(6) 经过这次项目，对SpringBoot+MybatisPlus整合更加熟悉，配置文件的减少，让我体验到了效率的提高。</p>
+<p>（2）表格使用了bootstrapTable,也是通过网上资料的查阅与学习，一步步来进行前端的开发</p>
+<p>（3）在配置弹窗时用到了layer.js方面的知识，通过自身的学习以及组员之间的相互讨论，最终完成了前端的开发。</p>
+<p>  项目源码地址：<a target="_blank" rel="noopener" href="https://github.com/ChengRui79/pintuanAA-version3.0.git">https://github.com/ChengRui79/pintuanAA-version3.0.git</a></p>
+<p>  部署服务器url：<a target="_blank" rel="noopener" href="http://47.110.34.43/">http://47.110.34.43/</a></p>
+<h1 id="参-考-文-献"><a href="#参-考-文-献" class="headerlink" title="参 考 文 献"></a>参 考 文 献</h1><p>[1] 黑马程序员编著. Java EE企业级应用开发教程[M]. 人民邮电出版社 2017年</p>
+<p>[2] 详细SpringBoot教程之入门[ED&#x2F;OL]：<a target="_blank" rel="noopener" href="http://t.csdn.cn/aqMNh">http://t.csdn.cn/aqMNh</a></p>
+<p>[3] Springboot,SSM及SSH的概念、优点、区别及缺点[ED&#x2F;OL]: <a target="_blank" rel="noopener" href="http://t.csdn.cn/s4Vbw">http://t.csdn.cn/s4Vbw</a></p>
+<p>[4] Springboot+Mybatis+EasyPOI 进行对MySQL数据库内表进行导入导出[ED&#x2F;OL]: <a target="_blank" rel="noopener" href="http://t.csdn.cn/M0R2t">http://t.csdn.cn/M0R2t</a></p>
+<p>[5] SpringBoot开发单体应用[ED&#x2F;OL]: <a target="_blank" rel="noopener" href="http://t.csdn.cn/qVn4P">http://t.csdn.cn/qVn4P</a></p>
+<p>[6] mybatis-plus超详细讲解[ED&#x2F;OL]: <a target="_blank" rel="noopener" href="http://t.csdn.cn/We21U">http://t.csdn.cn/We21U</a></p>
+<p>[7] MyBatisPlus最新完整教程通俗易懂:</p>
+<p> <a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV17E411N7KN?p=12&share_source=copy_web">https://www.bilibili.com/video/BV17E411N7KN?p=12&amp;share_source=copy_web</a></p>
+<p>[8] 130SSM阶段实战-实战-登录-MD5加密1[ED&#x2F;OL]: <a target="_blank" rel="noopener" href="http://www.bilibili.com/video/BV1Va411J7Qd?spm_id_form=333.880.my_history.page.click">http://www.bilibili.com/video/BV1Va411J7Qd?spm_id_form=333.880.my_history.page.click</a></p>
+<p>[9] MD5[ED&#x2F;OL]: <a target="_blank" rel="noopener" href="http://t.csdn.cn/pnpjt">http://t.csdn.cn/pnpjt</a></p>
+<p>[10] docker常用命令大全[ED&#x2F;OL]: <a target="_blank" rel="noopener" href="https://www.cnblogs.com/qq-965324258/articles/14911469.html">https://www.cnblogs.com/qq-965324258/articles/14911469.html</a></p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/project/" class="category-chain-item">project</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/project/java/" class="category-chain-item">java</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/springboot/">#springboot</a>
+      
+        <a href="/tags/java/">#java</a>
+      
+        <a href="/tags/AA%E6%8B%BC%E5%9B%A2/">#AA拼团</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>AA</div>
+      <div>https://zcsry.cn/2023/04/03/AA/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>CR</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2023年4月3日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2023/04/02/The%20Art%20of%20Software%20Testing/" title="the reaction to The Art of Software Testing">
+                        <span class="hidden-mobile">the reaction to The Art of Software Testing</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+  
+  
+    <article id="comments" lazyload>
+      
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://lib.baomitu.com/valine/1.5.1/Valine.min.js', function() {
+        var options = Object.assign(
+          {"appId":"NZzmWHo4vLeDsTh3MaGJBfT1-gzGzoHsz","appKey":"EaF7VkHeBkgVwTLy7IHYmPIs","path":"window.location.pathname","placeholder":"留下你的评论吧","avatar":"retro","meta":["nick","mail","link"],"requiredFields":[],"pageSize":5,"lang":"zh-CN","highlight":false,"recordIP":false,"serverURLs":"https://nzzmwho4.lc-cn-n1-shared.com","emojiCDN":"https://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/","emojiMaps":null,"enableQQ":false,"enable":true},
+          {
+            el: "#valine",
+            path: window.location.pathname
+          }
+        )
+        new Valine(options);
+        Fluid.utils.waitElementVisible('#valine .vcontent', () => {
+          var imgSelector = '#valine .vcontent img:not(.vemoji)';
+          Fluid.plugins.imageCaption(imgSelector);
+          Fluid.plugins.fancyBox(imgSelector);
+        })
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+    </article>
+  
+
+
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="leancloud-site-pv-container" style="display: none">
+        本Blog总访问量 
+        <span id="leancloud-site-pv"></span>
+         次
+      </span>
+    
+    
+      <span id="leancloud-site-uv-container" style="display: none">
+        总访客数 
+        <span id="leancloud-site-uv"></span>
+         人
+      </span>
+    
+    
+
+  
+</div>
+
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script defer src="/js/leancloud.js" ></script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
