@@ -25,14 +25,20 @@
 <meta property="og:site_name" content="One computer paddler&#39;s blog">
 <meta property="og:description" content="对于一个刚接触服务器部署的小白或者一个企图简化部署流程的程序员来说，宝塔面板无疑是一个不错的选择。简单点说，能简单解决的问题我有什么理由将其复杂（并不是说自己手动部署毫无意义）。宝塔面板是一款服务器管理软件，支持Windows和Linux系统，服务器可以通过网络轻松管理，提高运维效率。例如：创建和管理网站、FTP和数据库，并具有可视化文件管理器、可视化软件管理器、可视化CPU、内存、流程监控图表、">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://gcore.jsdelivr.net/gh/ChengRui79/ImageHost@main/img/202304050901453.jpg">
+<meta property="og:image" content="https://gcore.jsdelivr.net/gh/ChengRui79/ImageHost@main/img/202304171757788.png">
+<meta property="og:image" content="https://gcore.jsdelivr.net/gh/ChengRui79/ImageHost@main/img/202304171758196.png">
+<meta property="og:image" content="https://gcore.jsdelivr.net/gh/ChengRui79/ImageHost@main/img/202304171801729.png">
+<meta property="og:image" content="https://gcore.jsdelivr.net/gh/ChengRui79/ImageHost@main/img/202304171821940.png">
+<meta property="og:image" content="https://gcore.jsdelivr.net/gh/ChengRui79/ImageHost@main/img/202304171822151.png">
+<meta property="og:image" content="https://gcore.jsdelivr.net/gh/ChengRui79/ImageHost@main/img/202304171820889.png">
+<meta property="og:image" content="https://gcore.jsdelivr.net/gh/ChengRui79/ImageHost@main/img/202304171817457.png">
 <meta property="article:published_time" content="2023-04-05T10:44:11.000Z">
-<meta property="article:modified_time" content="2023-04-05T11:06:10.961Z">
+<meta property="article:modified_time" content="2023-04-17T10:29:21.096Z">
 <meta property="article:author" content="CR">
 <meta property="article:tag" content="AT">
 <meta property="article:tag" content="宝塔面板">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://gcore.jsdelivr.net/gh/ChengRui79/ImageHost@main/img/202304050901453.jpg">
+<meta name="twitter:image" content="https://gcore.jsdelivr.net/gh/ChengRui79/ImageHost@main/img/202304171757788.png">
   
   
   
@@ -242,7 +248,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          4 字
+          3.4k 字
         
       </span>
     
@@ -253,7 +259,7 @@
         
         
         
-          1 分钟
+          29 分钟
         
       </span>
     
@@ -304,8 +310,96 @@
             
               <div class="markdown-body">
                 
-                <p>待编内容</p>
-<img src="https://gcore.jsdelivr.net/gh/ChengRui79/ImageHost@main/img/202304050901453.jpg" srcset="/img/loading.gif" lazyload alt="pexels-charles-1851164" style="zoom:50%;" />
+                <h2 id="宝塔面板部署Java-web项目的教程"><a href="#宝塔面板部署Java-web项目的教程" class="headerlink" title="宝塔面板部署Java web项目的教程"></a>宝塔面板部署Java web项目的教程</h2><h3 id="步骤一：安装宝塔面板"><a href="#步骤一：安装宝塔面板" class="headerlink" title="步骤一：安装宝塔面板"></a>步骤一：安装宝塔面板</h3><ul>
+<li><p>访问宝塔官网 <a target="_blank" rel="noopener" href="https://www.bt.cn/">https://www.bt.cn/</a> ，选择Linux面板，复制安装命令，例如<strong>Centos</strong>安装脚本yum install -y wget &amp;&amp; wget -O install.sh <a target="_blank" rel="noopener" href="https://download.bt.cn/install/install_6.0.sh">https://download.bt.cn/install/install_6.0.sh</a> &amp;&amp; sh install.sh ed8484bec。</p>
+</li>
+<li><p>在你的Linux服务器上运行安装命令，等待安装完成。</p>
+</li>
+<li><p>记下安装完成后显示的面板地址、用户名和密码（建议复制到txt文件），用浏览器访问面板地址，登录面板。</p>
+<img src="https://gcore.jsdelivr.net/gh/ChengRui79/ImageHost@main/img/202304171757788.png" srcset="/img/loading.gif" lazyload alt="image-20230417175723637" style="zoom:67%;" />
+
+<img src="https://gcore.jsdelivr.net/gh/ChengRui79/ImageHost@main/img/202304171758196.png" srcset="/img/loading.gif" lazyload alt="image-20230417175840135" style="zoom:67%;" /></li>
+</ul>
+<h3 id="步骤二：安装Tomcat和JDK"><a href="#步骤二：安装Tomcat和JDK" class="headerlink" title="步骤二：安装Tomcat和JDK"></a>步骤二：安装Tomcat和JDK</h3><ul>
+<li><p>访问你的宝塔外网地址，登录你的宝塔后台（填写你自己的账号密码）</p>
+<img src="https://gcore.jsdelivr.net/gh/ChengRui79/ImageHost@main/img/202304171801729.png" srcset="/img/loading.gif" lazyload alt="image-20230417180102670" style="zoom:67%;" />
+</li>
+<li><p>在面板上选择软件商店，找到Java项目一键部署，点击安装。</p>
+</li>
+<li><p>安装完成后，点击设置，选择Tomcat版本（根据你的项目需求），点击安装。</p>
+</li>
+<li><p>安装Tomcat的同时，宝塔会自动安装对应版本的JDK，并配置好环境变量。</p>
+</li>
+<li><p>安装完成后，记下Tomcat的端口号（默认为8080），并在你的服务器防火墙和云服务商控制台上开放该端口号。</p>
+</li>
+</ul>
+<h3 id="步骤三：创建数据库并导入数据"><a href="#步骤三：创建数据库并导入数据" class="headerlink" title="步骤三：创建数据库并导入数据"></a>步骤三：创建数据库并导入数据</h3><ul>
+<li><p>在面板上选择数据库，找到MySQL或MariaDB（根据你的项目需求），点击安装。</p>
+</li>
+<li><p>安装完成后，点击设置，设置数据库的root密码，并在高级设置中开启远程连接。（建议远程数据库与本地数据库名相同）</p>
+<img src="https://gcore.jsdelivr.net/gh/ChengRui79/ImageHost@main/img/202304171821940.png" srcset="/img/loading.gif" lazyload alt="image-20230417182134865" style="zoom:67%;" />
+</li>
+<li><p>在你的服务器防火墙和云服务商控制台上开放数据库的端口号（默认为3306）。</p>
+<img src="https://gcore.jsdelivr.net/gh/ChengRui79/ImageHost@main/img/202304171822151.png" srcset="/img/loading.gif" lazyload alt="image-20230417182228088" style="zoom:67%;" />
+</li>
+<li><p>使用数据库管理工具（如Navicat）连接到数据库，创建一个数据库，并导入你的项目所需的数据。</p>
+</li>
+<li><p>关于导入数据在这里你有两个选择</p>
+<p>1.本地使用Navicat点击连接，连接远程数据库，在云端数据库（宝塔内）运行sql语句创建数据</p>
+<img src="https://gcore.jsdelivr.net/gh/ChengRui79/ImageHost@main/img/202304171820889.png" srcset="/img/loading.gif" lazyload alt="image-20230417182032822" style="zoom:67%;" />
+
+<p>2.在本地数据库创建数据，Navicat点击工具，数据传输，选择已连接的数据库并填写服务器数据库名（建议远程数据库与本地数据库名相同）</p>
+<img src="https://gcore.jsdelivr.net/gh/ChengRui79/ImageHost@main/img/202304171817457.png" srcset="/img/loading.gif" lazyload alt="image-20230417181725385" style="zoom:67%;" /></li>
+</ul>
+<h3 id="步骤四：上传并部署Java-web项目"><a href="#步骤四：上传并部署Java-web项目" class="headerlink" title="步骤四：上传并部署Java web项目"></a>步骤四：上传并部署Java web项目</h3><ul>
+<li>在面板上选择文件管理，进入&#x2F;usr&#x2F;local&#x2F;bt&#x2F;tomcat&#x2F;webapps目录，新建一个目录（如test）。</li>
+<li>进入新建的目录，上传你的Java web项目打包成的war文件（如test.war）。</li>
+<li>解压war文件，并删除war文件。</li>
+<li>在面板上选择Java项目一键部署，点击添加站点，输入域名（如test.com）或IP地址（如123.456.789.0），端口号（如8080），项目名称（如test）。</li>
+<li>点击保存，然后重启Tomcat。</li>
+</ul>
+<h3 id="步骤五：测试访问Java-web项目"><a href="#步骤五：测试访问Java-web项目" class="headerlink" title="步骤五：测试访问Java web项目"></a>步骤五：测试访问Java web项目</h3><ul>
+<li>在浏览器上输入域名或IP地址加端口号加项目名称（如<a target="_blank" rel="noopener" href="http://test.com:8080/test">http://test.com:8080/test</a> 或 <a href="http://123.456.789.0:8080/test">http://123.456.789.0:8080/test</a> ），回车访问你的Java web项目。</li>
+<li>如果出现404或其他错误，可以检查你的项目配置文件（如web.xml），Tomcat配置文件（如server.xml），数据库连接信息等是否正确。</li>
+</ul>
+<p>以上教程参考了以下搜索结果：</p>
+<p>¹ 宝塔Linux部署JavaWeb项目两种方式，图文并茂 - CSDN博客<br>² 【宝塔Linux面板】一键部署Java Web项目 - CSDN博客<br>³ 通过宝塔面板部署javaweb项目（个人网站，订单管理系统 … - CSDN博客</p>
+<p>源: 与必应的对话， 2023&#x2F;4&#x2F;17<br>(1) 宝塔Linux部署JavaWeb项目两种方式，图文并茂 - CSDN博客. <a target="_blank" rel="noopener" href="https://blog.csdn.net/bakelFF/article/details/122266771">https://blog.csdn.net/bakelFF/article/details/122266771</a>.<br>(2) 【宝塔Linux面板】一键部署Java Web项目 - CSDN博客. <a target="_blank" rel="noopener" href="https://blog.csdn.net/kitiyang/article/details/120098693">https://blog.csdn.net/kitiyang/article/details/120098693</a>.<br>(3) 通过宝塔面板部署javaweb项目（个人网站，订单管理系统 …. <a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_51560103/article/details/120027343">https://blog.csdn.net/weixin_51560103/article/details/120027343</a>.</p>
+<h2 id="宝塔面板部署springboot项目的教程"><a href="#宝塔面板部署springboot项目的教程" class="headerlink" title="宝塔面板部署springboot项目的教程"></a>宝塔面板部署springboot项目的教程</h2><h3 id="步骤一：安装宝塔面板-1"><a href="#步骤一：安装宝塔面板-1" class="headerlink" title="步骤一：安装宝塔面板"></a>步骤一：安装宝塔面板</h3><ul>
+<li>相同步骤可参考以上<strong>宝塔面板部署Java web项目的教程</strong>不多赘述</li>
+<li>访问宝塔官网 <a target="_blank" rel="noopener" href="https://www.bt.cn/">https://www.bt.cn/</a> ，选择Linux面板，复制安装命令，例如<strong>Centos</strong>安装脚本yum install -y wget &amp;&amp; wget -O install.sh <a target="_blank" rel="noopener" href="https://download.bt.cn/install/install_6.0.sh">https://download.bt.cn/install/install_6.0.sh</a> &amp;&amp; sh install.sh ed8484bec。</li>
+<li>在你的Linux服务器上运行安装命令，等待安装完成。</li>
+<li>记下安装完成后显示的面板地址、用户名和密码（建议复制到txt文件），用浏览器访问面板地址，登录面板。</li>
+</ul>
+<h3 id="步骤二：安装JDK"><a href="#步骤二：安装JDK" class="headerlink" title="步骤二：安装JDK"></a>步骤二：安装JDK</h3><ul>
+<li>在面板上选择软件商店，找到Java项目一键部署，点击安装。</li>
+<li>安装完成后，点击设置，选择JDK版本（根据你的项目需求），点击安装。</li>
+<li>安装完成后，检查JDK的环境变量是否正确配置。</li>
+</ul>
+<h3 id="步骤三：创建数据库并导入数据-1"><a href="#步骤三：创建数据库并导入数据-1" class="headerlink" title="步骤三：创建数据库并导入数据"></a>步骤三：创建数据库并导入数据</h3><ul>
+<li>在面板上选择数据库，找到MySQL或MariaDB（根据你的项目需求），点击安装。</li>
+<li>安装完成后，点击设置，设置数据库的root密码，并在高级设置中开启远程连接。</li>
+<li>在你的服务器防火墙和云服务商控制台上开放数据库的端口号（默认为3306）。</li>
+<li>使用数据库管理工具（如Navicat）连接到数据库，创建一个数据库，并导入你的项目所需的数据。</li>
+</ul>
+<h3 id="步骤四：上传并部署springboot项目"><a href="#步骤四：上传并部署springboot项目" class="headerlink" title="步骤四：上传并部署springboot项目"></a>步骤四：上传并部署springboot项目</h3><ul>
+<li><p>在面板上选择文件管理，上传你的springboot项目打包成的jar文件（如test.jar）到任意目录（如&#x2F;usr&#x2F;local&#x2F;bt&#x2F;test）。</p>
+</li>
+<li><p>在面板上选择Java项目一键部署，点击添加站点，输入域名（如test.com）或IP地址（如123.456.789.0），端口号（如8400），项目名称（如test）。</p>
+</li>
+<li><p>点击保存，然后启动springboot项目。</p>
+</li>
+<li><p>启动命令：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs java">java -jar match.jar 运行jar包, 终端关闭后就会停止运行<br>nohup java -jar match.jar 持续运行jar包, 终端关闭后不会停止运行<br></code></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="步骤五：测试访问springboot项目"><a href="#步骤五：测试访问springboot项目" class="headerlink" title="步骤五：测试访问springboot项目"></a>步骤五：测试访问springboot项目</h3><ul>
+<li>在浏览器上输入域名或IP地址加端口号（如<a target="_blank" rel="noopener" href="http://test.com:8400/">http://test.com:8400</a> 或 <a href="http://123.456.789.0:8400">http://123.456.789.0:8400</a> ），回车访问你的springboot项目。</li>
+<li>如果出现错误，可以检查你的项目日志文件（如&#x2F;usr&#x2F;local&#x2F;bt&#x2F;test&#x2F;test.log），数据库连接信息等是否正确。</li>
+</ul>
+<p>以上教程参考了以下搜索结果：</p>
+<p>¹ 利用宝塔面板部署springboot项目_工地精神的博客-CSDN博客<br>² springboot项目轻松部署到宝塔（服务器）_宝塔部署springboot项目_木子Link的博客-CSDN博客<br>³ Spring Boot 中文文档<br>⁴ Spring Boot - 百度百科<br>⁵ JavaでのWeb開発に便利なSpring Bootとは？メリット…｜Udemy …</p>
+<p>源: 与必应的对话， 2023&#x2F;4&#x2F;17<br>(1) 利用宝塔面板部署springboot项目_工地精神的博客-CSDN博客. <a target="_blank" rel="noopener" href="https://blog.csdn.net/txyllyyj/article/details/119277420">https://blog.csdn.net/txyllyyj/article/details/119277420</a>.<br>(2) springboot项目轻松部署到宝塔（服务器） - CSDN博客. <a target="_blank" rel="noopener" href="https://blog.csdn.net/li1441853031/article/details/120854480">https://blog.csdn.net/li1441853031/article/details/120854480</a>.<br>(3) Spring Boot 中文文档. <a target="_blank" rel="noopener" href="https://springdoc.cn/spring-boot/">https://springdoc.cn/spring-boot/</a>.<br>(4) Spring Boot - 百度百科-验证. <a target="_blank" rel="noopener" href="https://www.baike.baidu.com/item/Spring%20Boot/20249767">https://www.baike.baidu.com/item/Spring%20Boot/20249767</a>.<br>(5) JavaでのWeb開発に便利なSpring Bootとは？メリット…｜Udemy …. <a target="_blank" rel="noopener" href="https://udemy.benesse.co.jp/development/app/spring-boot.html">https://udemy.benesse.co.jp/development/app/spring-boot.html</a>.</p>
+
                 
               </div>
             
