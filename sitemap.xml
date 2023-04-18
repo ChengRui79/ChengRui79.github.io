@@ -83,7 +83,7 @@
 
   
   <url>
-    <loc>https://zcsry.cn/tags/java/</loc>
+    <loc>https://zcsry.cn/tags/Android/</loc>
     <lastmod>2023-04-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -91,20 +91,6 @@
   
   <url>
     <loc>https://zcsry.cn/tags/springboot/</loc>
-    <lastmod>2023-04-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://zcsry.cn/tags/AA%E6%8B%BC%E5%9B%A2/</loc>
-    <lastmod>2023-04-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://zcsry.cn/tags/Android/</loc>
     <lastmod>2023-04-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -119,6 +105,20 @@
   
   <url>
     <loc>https://zcsry.cn/tags/Software-Testing/</loc>
+    <lastmod>2023-04-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zcsry.cn/tags/java/</loc>
+    <lastmod>2023-04-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zcsry.cn/tags/AA%E6%8B%BC%E5%9B%A2/</loc>
     <lastmod>2023-04-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -190,13 +190,6 @@
   </url>
   
   <url>
-    <loc>https://zcsry.cn/categories/project/java/</loc>
-    <lastmod>2023-04-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://zcsry.cn/categories/project/Android/</loc>
     <lastmod>2023-04-18</lastmod>
     <changefreq>weekly</changefreq>
@@ -205,6 +198,13 @@
   
   <url>
     <loc>https://zcsry.cn/categories/reaction/Software-Testing/</loc>
+    <lastmod>2023-04-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zcsry.cn/categories/project/java/</loc>
     <lastmod>2023-04-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
