@@ -51,10 +51,10 @@
 <meta property="og:image" content="https://zcsry.cn/img/AA/clip_image047.png">
 <meta property="og:image" content="https://zcsry.cn/img/AA/clip_image049.png">
 <meta property="article:published_time" content="2023-04-03T08:56:32.000Z">
-<meta property="article:modified_time" content="2023-04-03T10:30:57.794Z">
+<meta property="article:modified_time" content="2023-04-21T23:43:19.574Z">
 <meta property="article:author" content="CR">
-<meta property="article:tag" content="springboot">
 <meta property="article:tag" content="java">
+<meta property="article:tag" content="springboot">
 <meta property="article:tag" content="AA拼团">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://zcsry.cn/img/AA/clip_image002.png">
@@ -267,7 +267,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          9.5k 字
+          9.8k 字
         
       </span>
     
@@ -278,7 +278,7 @@
         
         
         
-          80 分钟
+          82 分钟
         
       </span>
     
@@ -716,18 +716,26 @@
 <p>（6）成功实现将活动账单导入到Excel表格中</p>
 <p>（7）活动结束后可以生成活动报告</p>
 <p>（7）未能实现Docker部署和以微服务方式运行</p>
-<h2 id="2、问题总结"><a href="#2、问题总结" class="headerlink" title="2、问题总结"></a>2、问题总结</h2><p>（2）docker已实现将项目部署上传到我们租借的阿里云服务器，但是未能成功运行springboot项目，已尝试百度常用解决办法（关闭防火墙，重启docker，修改登录拦截器）最终依旧未能实现运行，采用本地localhost运行。</p>
+<h2 id="2、问题总结"><a href="#2、问题总结" class="headerlink" title="2、问题总结"></a>2、问题总结</h2><p>[CR]:</p>
+<p>（1）需求分析环节未提前考虑到对团员隐私的保护，虽然考虑到了非拼团创建者无权改变团队活动的状态，但是对生成报告的功能未进行合理保护</p>
+<p>（2）docker已实现将项目部署上传到我们租借的阿里云服务器，但是未能成功运行springboot项目，已尝试百度常用解决办法（关闭防火墙，重启docker，修改登录拦截器）最终依旧未能实现运行，采用本地localhost运行。</p>
 <p><img src="/img/AA/clip_image047.png" srcset="/img/loading.gif" lazyload alt="img"></p>
 <p><img src="/img/AA/clip_image049.png" srcset="/img/loading.gif" lazyload alt="img"></p>
 <p>（3）考虑到指导老师于7号提出的建议，特决定对用户表的password实现保护，即采用md5技术实现对其单向加密。</p>
 <p>（4）关于git的版本管理，我们进行了三次大更新，分别完善了其前端页面，AA机制等已上传到github</p>
+<p>[XY]:</p>
+<p>（1）对于MyBatis—Plus的熟悉程度不够，花费一些时间在狂神说上学习了MP后，了解了其中的一些基础。</p>
 <p>（2）对MySQL的认知更深刻了，对其存储、索引、优化等方面都有了一定的掌握。</p>
 <p>（3）经过这次实验，对于MyBatis—Plus的强大功能有了更深层次的认识，采用Maven插件快速生成了Mapper、Model、Service、Controller代码，使用起来相较MyBatis而言更加便捷。</p>
+<p>[XH]:</p>
+<p>(1)Springboot框架不够熟练，花费大量时间在熟悉框架上，致使项目开发匆忙；</p>
 <p>(2) 使用Spring boot报错时，难以定位问题所在；</p>
 <p>(3) 项目的数据传输较为复杂，我经常弄混或忘记； </p>
 <p>(4) 新学习到了导出账单的功能实现；</p>
 <p>(5) 协助编写前端也让我学到很多，例如thymeleaf,提高了页面、代码的复用性，以及对    jQuery的ajax方法的熟悉；</p>
 <p>(6) 经过这次项目，对SpringBoot+MybatisPlus整合更加熟悉，配置文件的减少，让我体验到了效率的提高。</p>
+<p>[XLJ]:</p>
+<p>（1）jQuery的ajax方法不熟悉，所以花费了大量的时间进行准备，以此来完成本次实践项目的前端开发</p>
 <p>（2）表格使用了bootstrapTable,也是通过网上资料的查阅与学习，一步步来进行前端的开发</p>
 <p>（3）在配置弹窗时用到了layer.js方面的知识，通过自身的学习以及组员之间的相互讨论，最终完成了前端的开发。</p>
 <p>  项目源码地址：<a target="_blank" rel="noopener" href="https://github.com/ChengRui79/pintuanAA-version3.0.git">https://github.com/ChengRui79/pintuanAA-version3.0.git</a></p>
@@ -783,9 +791,9 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/springboot/">#springboot</a>
-      
         <a href="/tags/java/">#java</a>
+      
+        <a href="/tags/springboot/">#springboot</a>
       
         <a href="/tags/AA%E6%8B%BC%E5%9B%A2/">#AA拼团</a>
       
