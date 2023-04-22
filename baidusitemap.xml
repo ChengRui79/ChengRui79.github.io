@@ -1,31 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://zcsry.cn/2023/04/22/Test%20paper%20distribution%20system/</loc>
+    <lastmod>2023-04-22</lastmod>
+  </url>
+  <url>
     <loc>https://zcsry.cn/2023/04/03/AA/</loc>
-    <lastmod>2023-04-21</lastmod>
-  </url>
-  <url>
-    <loc>https://zcsry.cn/2023/04/05/%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF%E4%BD%BF%E7%94%A8/</loc>
-    <lastmod>2023-04-19</lastmod>
-  </url>
-  <url>
-    <loc>https://zcsry.cn/2023/04/05/UML-project/</loc>
-    <lastmod>2023-04-18</lastmod>
-  </url>
-  <url>
-    <loc>https://zcsry.cn/2023/04/05/ImageHost/</loc>
-    <lastmod>2023-04-18</lastmod>
+    <lastmod>2023-04-22</lastmod>
   </url>
   <url>
     <loc>https://zcsry.cn/2023/04/02/Android-project/</loc>
-    <lastmod>2023-04-03</lastmod>
-  </url>
-  <url>
-    <loc>https://zcsry.cn/2023/04/02/The%20Art%20of%20Software%20Testing/</loc>
-    <lastmod>2023-04-03</lastmod>
+    <lastmod>2023-04-22</lastmod>
   </url>
   <url>
     <loc>https://zcsry.cn/2023/03/28/hello-world/</loc>
-    <lastmod>2023-04-02</lastmod>
+    <lastmod>2023-04-22</lastmod>
+  </url>
+  <url>
+    <loc>https://zcsry.cn/2023/04/05/ImageHost/</loc>
+    <lastmod>2023-04-22</lastmod>
+  </url>
+  <url>
+    <loc>https://zcsry.cn/2023/04/02/The%20Art%20of%20Software%20Testing/</loc>
+    <lastmod>2023-04-22</lastmod>
+  </url>
+  <url>
+    <loc>https://zcsry.cn/2023/04/05/UML-project/</loc>
+    <lastmod>2023-04-22</lastmod>
+  </url>
+  <url>
+    <loc>https://zcsry.cn/2023/04/05/%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF%E4%BD%BF%E7%94%A8/</loc>
+    <lastmod>2023-04-22</lastmod>
   </url>
 </urlset> 
