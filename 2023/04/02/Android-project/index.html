@@ -1,311 +1,129 @@
-
-
 <!DOCTYPE html>
-<html lang="zh-CN" data-default-color-scheme=auto>
-
-
-
+<html>
 <head>
-  <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
-  <link rel="icon" href="/img/fluid.png">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta charset="utf-8">
   
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
   
-  <meta name="theme-color" content="#2f4154">
-  <meta name="author" content="CR">
-  <meta name="keywords" content="">
-  
-    <meta name="description" content="前后端分离，开发一个班费日常使用记录的APP，记账员记录班费的收支情况">
+  <title>Android_project | One computer paddler&#39;s blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="前后端分离，开发一个班费日常使用记录的APP，记账员记录班费的收支情况">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Android_project">
 <meta property="og:url" content="https://zcsry.cn/2023/04/02/Android-project/index.html">
 <meta property="og:site_name" content="One computer paddler&#39;s blog">
 <meta property="og:description" content="前后端分离，开发一个班费日常使用记录的APP，记账员记录班费的收支情况">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://zcsry.cn/img/index/bf.jpg">
+<meta property="og:image" content="https://zcsry.cn/img/Android-project/clip_image002.gif">
+<meta property="og:image" content="https://zcsry.cn/img/Android-project/clip_image004.gif">
+<meta property="og:image" content="https://zcsry.cn/img/Android-project/clip_image006.gif">
+<meta property="og:image" content="https://zcsry.cn/img/Android-project/clip_image008.gif">
+<meta property="og:image" content="https://zcsry.cn/img/Android-project/clip_image010.gif">
+<meta property="og:image" content="https://zcsry.cn/img/Android-project/clip_image012.gif">
+<meta property="og:image" content="https://zcsry.cn/img/Android-project/clip_image014.gif">
+<meta property="og:image" content="https://zcsry.cn/img/Android-project/clip_image016.gif">
+<meta property="og:image" content="https://zcsry.cn/img/Android-project/clip_image018.gif">
+<meta property="og:image" content="https://zcsry.cn/img/Android-project/clip_image020.gif">
+<meta property="og:image" content="https://zcsry.cn/img/Android-project/clip_image022.gif">
+<meta property="og:image" content="https://zcsry.cn/img/Android-project/clip_image024.gif">
+<meta property="og:image" content="https://zcsry.cn/img/Android-project/clip_image026.gif">
+<meta property="og:image" content="https://zcsry.cn/img/Android-project/clip_image028.gif">
+<meta property="og:image" content="https://zcsry.cn/img/Android-project/clip_image030.gif">
+<meta property="og:image" content="https://zcsry.cn/img/Android-project/clip_image031.gif">
+<meta property="og:image" content="https://zcsry.cn/img/Android-project/clip_image033.gif">
+<meta property="og:image" content="https://zcsry.cn/img/Android-project/clip_image035.gif">
+<meta property="og:image" content="https://zcsry.cn/img/Android-project/clip_image037.gif">
+<meta property="og:image" content="https://zcsry.cn/img/Android-project/clip_image039.gif">
 <meta property="article:published_time" content="2023-04-02T11:06:21.000Z">
 <meta property="article:modified_time" content="2023-04-22T12:24:15.388Z">
 <meta property="article:author" content="CR">
 <meta property="article:tag" content="springboot">
 <meta property="article:tag" content="Android">
 <meta property="article:tag" content="前后端分离">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://zcsry.cn/img/index/bf.jpg">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://zcsry.cn/img/Android-project/clip_image002.gif">
+  
+    <link rel="alternate" href="/atom.xml" title="One computer paddler's blog" type="application/atom+xml">
   
   
+    <link rel="shortcut icon" href="/favicon.png">
   
-  <title>Android_project - One computer paddler&#39;s blog</title>
-
-  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
-
-
-
-  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
-
-  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
-
-  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
-
-
-
-<!-- 主题依赖的图标库，不要自行修改 -->
-<!-- Do not modify the link that theme dependent icons -->
-
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
-
-
-
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
-
-
-<link  rel="stylesheet" href="/css/main.css" />
-
-
-  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
   
-    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
-  
-
-
-
-
-  <script id="fluid-configs">
-    var Fluid = window.Fluid || {};
-    Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"zcsry.cn","root":"/","version":"1.9.4","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"NZzmWHo4vLeDsTh3MaGJBfT1-gzGzoHsz","app_key":"EaF7VkHeBkgVwTLy7IHYmPIs","server_url":"https://nzzmwho4.lc-cn-n1-shared.com","path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
-
-    if (CONFIG.web_analytics.follow_dnt) {
-      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
-      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
-    }
-  </script>
-  <script  src="/js/utils.js" ></script>
-  <script  src="/js/color-schema.js" ></script>
-  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
 
   
-
   
-
-  
-
-  
-
-  
-
-  
+<link rel="stylesheet" href="/css/style.css">
 
   
     
-  
-
-
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
 
   
 <meta name="generator" content="Hexo 6.3.0"></head>
 
-
 <body>
-  
-
-  <header>
-    
-
-<div class="header-inner" style="height: 70vh;">
-  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
-  <div class="container">
-    <a class="navbar-brand" href="/">
-      <strong>CR</strong>
-    </a>
-
-    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <div class="animated-icon"><span></span><span></span><span></span></div>
-    </button>
-
-    <!-- Collapsible content -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto text-center">
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/">
-                <i class="iconfont icon-home-fill"></i>
-                <span>首页</span>
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/archives/">
-                <i class="iconfont icon-archive-fill"></i>
-                <span>归档</span>
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/categories/">
-                <i class="iconfont icon-category-fill"></i>
-                <span>分类</span>
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/tags/">
-                <i class="iconfont icon-tags-fill"></i>
-                <span>标签</span>
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/about/">
-                <i class="iconfont icon-user-fill"></i>
-                <span>关于</span>
-              </a>
-            </li>
-          
-        
-        
-          <li class="nav-item" id="search-btn">
-            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
-              <i class="iconfont icon-search"></i>
-            </a>
-          </li>
-          
-        
-        
-          <li class="nav-item" id="color-toggle-btn">
-            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
-              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
-            </a>
-          </li>
-        
-      </ul>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">One computer paddler&#39;s blog</a>
+      </h1>
+      
     </div>
-  </div>
-</nav>
-
-  
-
-<div id="banner" class="banner" parallax=true
-     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
-  <div class="full-bg-img">
-    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
-      <div class="banner-text text-center fade-in-up">
-        <div class="h2">
-          
-            <span id="subtitle" data-typed-text="Android_project"></span>
-          
-        </div>
-
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
         
-          
-  <div class="mt-3">
-    
-    
-      <span class="post-meta">
-        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-04-02 19:06" pubdate>
-          2023年4月2日 晚上
-        </time>
-      </span>
-    
-  </div>
-
-  <div class="mt-1">
-    
-      <span class="post-meta mr-2">
-        <i class="iconfont icon-chart"></i>
+          <a class="main-nav-link" href="/">Home</a>
         
-          8.9k 字
+          <a class="main-nav-link" href="/archives">Archives</a>
         
-      </span>
-    
-
-    
-      <span class="post-meta mr-2">
-        <i class="iconfont icon-clock-fill"></i>
+      </nav>
+      <nav id="sub-nav">
         
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS 订阅"></a>
         
-        
-          75 分钟
-        
-      </span>
-    
-
-    
-    
-      
-        <span id="leancloud-page-views-container" class="post-meta" style="display: none">
-          <i class="iconfont icon-eye" aria-hidden="true"></i>
-          <span id="leancloud-page-views"></span> 次
-        </span>
-        
-      
-    
-  </div>
-
-
-        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="搜索"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://zcsry.cn"></form>
       </div>
-
-      
     </div>
   </div>
-</div>
+</header>
 
-</div>
-
-  </header>
-
-  <main>
+      <div class="outer">
+        <section id="main"><article id="post-Android-project" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/04/02/Android-project/" class="article-date">
+  <time class="dt-published" datetime="2023-04-02T11:06:21.000Z" itemprop="datePublished">2023-04-02</time>
+</a>
     
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/project/">project</a>►<a class="article-category-link" href="/categories/project/Android/">Android</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      Android_project
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
       
-
-<div class="container-fluid nopadding-x">
-  <div class="row nomargin-x">
-    <div class="side-col d-none d-lg-block col-lg-2">
-      
-
-    </div>
-
-    <div class="col-lg-8 nopadding-x-md">
-      <div class="container nopadding-x-md" id="board-ctn">
-        <div id="board">
-          <article class="post-content mx-auto">
-            <!-- SEO header -->
-            <h1 style="display: none">Android_project</h1>
-            
-            
-              <div class="markdown-body">
-                
-                <h1 id="移动互联网开发技术-期末大作业"><a href="#移动互联网开发技术-期末大作业" class="headerlink" title="移动互联网开发技术 期末大作业"></a>移动互联网开发技术 期末大作业</h1><h1 id="一、任务与要求"><a href="#一、任务与要求" class="headerlink" title="一、任务与要求"></a>一、任务与要求</h1><ol>
+        <h1 id="移动互联网开发技术-期末大作业"><a href="#移动互联网开发技术-期末大作业" class="headerlink" title="移动互联网开发技术 期末大作业"></a>移动互联网开发技术 期末大作业</h1><h1 id="一、任务与要求"><a href="#一、任务与要求" class="headerlink" title="一、任务与要求"></a>一、任务与要求</h1><ol>
 <li><p>任务描述：开发一个班费日常使用记录的APP，记账员记录班费的收支情况，每笔支出需要包含日期、金额、购买的实物照片、购物小票（如果有）、实物的验收人。班级成员可以查看和查询班费的开支情况，可以在1周内（讨论期）对当笔开支提出质疑，班委成员回复质疑，所有质疑和应答全员可见。班级成员半数以上确认且所有质疑经发起人确认可以close的记录，可以标记为已确认状态，之后任何人无权再修改。超过讨论期未close的质疑自动close。</p>
 </li>
 <li><p>鼓励扩展的功能：记录归档、多班级支持。</p>
@@ -388,7 +206,7 @@
 <p>3.班级成员主要对记账员记录的开支进行质疑，以及对班委成员的回复进行通过</p>
 <h3 id="1-2开发工具和工具的配合"><a href="#1-2开发工具和工具的配合" class="headerlink" title="1.2开发工具和工具的配合"></a>1.2开发工具和工具的配合</h3><p>  使用的主要开发工具有IntelliJ IDEA2021（后端spring boot项目开发），Android Studio（前端app开发），Mysql（数据库），Navicat for Mysql，夜神模拟器，华为nova7手机（真机安装运行），腾讯云轻量服务器（后端云部署）</p>
 <h2 id="2-总体设计"><a href="#2-总体设计" class="headerlink" title="2 总体设计"></a>2 总体设计</h2><h3 id="2-1设计模式"><a href="#2-1设计模式" class="headerlink" title="2.1设计模式"></a>2.1设计模式</h3><p>​    后端spring boot项目采用MVC设计模式如下图：</p>
-<p><img src="/img/Android-project/clip_image002.gif" srcset="/img/loading.gif" lazyload alt="spring boot项目结构图"></p>
+<p><img src="/img/Android-project/clip_image002.gif" alt="spring boot项目结构图"></p>
 <h3 id="2-2Android核心组件"><a href="#2-2Android核心组件" class="headerlink" title="2.2Android核心组件"></a>2.2Android核心组件</h3><p>​    Recylerview、Glide（图片加载）、activity、fragment、Okthhp（实现客户端与服务器端通信）</p>
 <h2 id="3-详细设计"><a href="#3-详细设计" class="headerlink" title="3 详细设计"></a>3 详细设计</h2><h3 id="3-1spring-boot属性配置"><a href="#3-1spring-boot属性配置" class="headerlink" title="3.1spring boot属性配置"></a>3.1spring boot属性配置</h3><p>配置应用端口88，配置腾讯云服务器远端数据库及其密码，以及图片上传云端位置</p>
 <p><strong>server.port</strong>&#x3D;**88<br>** <strong>spring.thymeleaf.cache</strong>&#x3D;<strong>false<br> spring.datasource.name</strong>&#x3D;**spell-group-datasource<br>** <strong>spring.datasource.driverClassName</strong>&#x3D;**com.mysql.cj.jdbc.Driver<br>** <strong>spring.datasource.url</strong>&#x3D;**jdbc:mysql:&#x2F;&#x2F;49.233.46.138:3306&#x2F;jilu?useUnicode&#x3D;true&amp;serverTimezone&#x3D;Asia&#x2F;Shanghai&amp;characterEncoding&#x3D;utf8&amp;autoReconnect&#x3D;true&amp;useSSL&#x3D;false&amp;allowMultiQueries&#x3D;true<br>** <strong>spring.datasource.username</strong>&#x3D;**jilu<br>** <strong>spring.datasource.password</strong>&#x3D;<strong>12345678</strong></p>
@@ -398,13 +216,13 @@
 <p>&#x2F;&#x2F;班费列表</p>
 <p>​    public static String listAllbanfeiInfoUrl &#x3D; “&#x2F;banfeiInfo&#x2F;list”;</p>
 <h3 id="3-3云服务器配置"><a href="#3-3云服务器配置" class="headerlink" title="3.3云服务器配置"></a>3.3云服务器配置</h3><p>​    1.开放端口88</p>
-<p><img src="/img/Android-project/clip_image004.gif" srcset="/img/loading.gif" lazyload alt=" 端口开放"></p>
+<p><img src="/img/Android-project/clip_image004.gif" alt=" 端口开放"></p>
 <p>  2.配置服务器相关（jdk,tomcat,数据库等相关环境安装）</p>
 <p>  3.springboot打jar包上传并启动服务器端（有两种启动方式命令1. java -jar server.jar随终端启动2. nohup java -jar server.jar后台一直运行，为节约系统资源这里采用方式1）</p>
-<p><img src="/img/Android-project/clip_image006.gif" srcset="/img/loading.gif" lazyload alt="云服务器终端启动服务器端"></p>
+<p><img src="/img/Android-project/clip_image006.gif" alt="云服务器终端启动服务器端"></p>
 <h3 id="3-4相关功能设计（部分）"><a href="#3-4相关功能设计（部分）" class="headerlink" title="3.4相关功能设计（部分）"></a>3.4相关功能设计（部分）</h3><p>  1.登录</p>
 <p>  后端（controller层）</p>
-<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs dart"> <span class="hljs-meta">@ApiOperation</span>(value = <span class="hljs-string">&quot;登录&quot;</span>, httpMethod = <span class="hljs-string">&quot;POST&quot;</span>, notes = <span class="hljs-string">&quot;加载数据&quot;</span>, response = ResponseData.<span class="hljs-keyword">class</span>)<br><span class="hljs-meta">@ApiImplicitParams</span>(&#123;<br>        <span class="hljs-meta">@ApiImplicitParam</span>(name = <span class="hljs-string">&quot;UserAccount&quot;</span>, value = <span class="hljs-string">&quot;账号&quot;</span>, <span class="hljs-keyword">required</span> = <span class="hljs-keyword">false</span>, paramType = <span class="hljs-string">&quot;query&quot;</span>, dataType = <span class="hljs-string">&quot;string&quot;</span>),<br>        <span class="hljs-meta">@ApiImplicitParam</span>(name = <span class="hljs-string">&quot;UserPwd&quot;</span>, value = <span class="hljs-string">&quot;密码&quot;</span>, <span class="hljs-keyword">required</span> = <span class="hljs-keyword">false</span>, paramType = <span class="hljs-string">&quot;query&quot;</span>, dataType = <span class="hljs-string">&quot;string&quot;</span>)<br>&#125;)<br><span class="hljs-meta">@RequestMapping</span>(<span class="hljs-string">&quot;login&quot;</span>)<br>public ResponseData listAll(<span class="hljs-meta">@ApiIgnore</span> <span class="hljs-built_in">String</span> demoUserAccount, <span class="hljs-meta">@ApiIgnore</span> <span class="hljs-built_in">String</span> demoUserPwd) &#123;<br>    <span class="hljs-keyword">try</span> &#123;<br>        UserInfo user = userInfoMapper.getUserByAccount(demoUserAccount);<br>        <span class="hljs-keyword">if</span> (demoUserPwd.equals(user.getPassword())) &#123;<br>            <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> ResponseData().data(user).success();<br>        &#125;<br>        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> ResponseData().fail(<span class="hljs-number">10003</span>, <span class="hljs-string">&quot;用户名或密码错误&quot;</span>);<br>    &#125; <span class="hljs-keyword">catch</span> (Exception e) &#123;<br>        e.printStackTrace();<br>        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> ResponseData().fail(<span class="hljs-number">10002</span>, <span class="hljs-string">&quot;用户不存在&quot;</span>);<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"> @ApiOperation(value = &quot;登录&quot;, httpMethod = &quot;POST&quot;, notes = &quot;加载数据&quot;, response = ResponseData.class)</span><br><span class="line">@ApiImplicitParams(&#123;</span><br><span class="line">        @ApiImplicitParam(name = &quot;UserAccount&quot;, value = &quot;账号&quot;, required = false, paramType = &quot;query&quot;, dataType = &quot;string&quot;),</span><br><span class="line">        @ApiImplicitParam(name = &quot;UserPwd&quot;, value = &quot;密码&quot;, required = false, paramType = &quot;query&quot;, dataType = &quot;string&quot;)</span><br><span class="line">&#125;)</span><br><span class="line">@RequestMapping(&quot;login&quot;)</span><br><span class="line">public ResponseData listAll(@ApiIgnore String demoUserAccount, @ApiIgnore String demoUserPwd) &#123;</span><br><span class="line">    try &#123;</span><br><span class="line">        UserInfo user = userInfoMapper.getUserByAccount(demoUserAccount);</span><br><span class="line">        if (demoUserPwd.equals(user.getPassword())) &#123;</span><br><span class="line">            return new ResponseData().data(user).success();</span><br><span class="line">        &#125;</span><br><span class="line">        return new ResponseData().fail(10003, &quot;用户名或密码错误&quot;);</span><br><span class="line">    &#125; catch (Exception e) &#123;</span><br><span class="line">        e.printStackTrace();</span><br><span class="line">        return new ResponseData().fail(10002, &quot;用户不存在&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>​    前端</p>
 <p>OkGo.<String><em>get</em>(Myapi.<em>mainHost</em>+Myapi.<em>loginUrl</em>)登录请求的接口</p>
@@ -415,7 +233,7 @@
 <p>当后端的@RequestParam中的值要和前端的params中的参数命名对应上，登录成功之后跳转到主页</p>
 <p>2.注册</p>
 <p>后端（controller层）</p>
-<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><code class="hljs dart"> <span class="hljs-meta">@ApiOperation</span>(value = <span class="hljs-string">&quot;register&quot;</span>, httpMethod = <span class="hljs-string">&quot;POST&quot;</span>, notes = <span class="hljs-string">&quot;加载数据&quot;</span>, response = UserInfo.<span class="hljs-keyword">class</span>)<br><span class="hljs-meta">@ApiImplicitParams</span>(&#123;<br>        <span class="hljs-meta">@ApiImplicitParam</span>(name = <span class="hljs-string">&quot;userAccount&quot;</span>, value = <span class="hljs-string">&quot;手机号&quot;</span>, <span class="hljs-keyword">required</span> = <span class="hljs-keyword">false</span>, paramType = <span class="hljs-string">&quot;query&quot;</span>, dataType = <span class="hljs-string">&quot;string&quot;</span>),<br>        <span class="hljs-meta">@ApiImplicitParam</span>(name = <span class="hljs-string">&quot;userName&quot;</span>, value = <span class="hljs-string">&quot;姓名&quot;</span>, <span class="hljs-keyword">required</span> = <span class="hljs-keyword">false</span>, paramType = <span class="hljs-string">&quot;query&quot;</span>, dataType = <span class="hljs-string">&quot;string&quot;</span>),<br>        <span class="hljs-meta">@ApiImplicitParam</span>(name = <span class="hljs-string">&quot;userPwd&quot;</span>, value = <span class="hljs-string">&quot;密码&quot;</span>, <span class="hljs-keyword">required</span> = <span class="hljs-keyword">false</span>, paramType = <span class="hljs-string">&quot;query&quot;</span>, dataType = <span class="hljs-string">&quot;string&quot;</span>), <br>&#125;)<br><span class="hljs-meta">@RequestMapping</span>(<span class="hljs-string">&quot;registered&quot;</span>)<br>public ResponseData registered(<span class="hljs-built_in">String</span> userAccount, <span class="hljs-built_in">String</span> userPwd,<span class="hljs-built_in">String</span> logo,<span class="hljs-built_in">String</span> qianming,<span class="hljs-built_in">String</span> phone) &#123;<br>    <span class="hljs-keyword">try</span> &#123;<br>        UserInfo user = userInfoMapper.getUserByAccount(userAccount);<br>        <span class="hljs-keyword">if</span> (<span class="hljs-keyword">null</span> == user) &#123;<br>            UserInfo demoUser = <span class="hljs-keyword">new</span> UserInfo();<br>            demoUser.setName(userAccount);<br>            demoUser.setPassword(userPwd);<br>            demoUser.setPhone(phone);<br><br>            userInfoMapper.insertIgnoreNull(demoUser);<br>        &#125; <span class="hljs-keyword">else</span> &#123;<br>            <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> ResponseData().fail(<span class="hljs-number">10001</span>, <span class="hljs-string">&quot;账号已存在，请更换。&quot;</span>);<br>        &#125;<br>    &#125; <span class="hljs-keyword">catch</span> (Exception e) &#123;<br>        e.printStackTrace();<br>        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> ResponseData().fail(<span class="hljs-number">500</span>, e.getMessage());<br>    &#125;<br>    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> ResponseData().success();<br>&#125;<br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"> @ApiOperation(value = &quot;register&quot;, httpMethod = &quot;POST&quot;, notes = &quot;加载数据&quot;, response = UserInfo.class)</span><br><span class="line">@ApiImplicitParams(&#123;</span><br><span class="line">        @ApiImplicitParam(name = &quot;userAccount&quot;, value = &quot;手机号&quot;, required = false, paramType = &quot;query&quot;, dataType = &quot;string&quot;),</span><br><span class="line">        @ApiImplicitParam(name = &quot;userName&quot;, value = &quot;姓名&quot;, required = false, paramType = &quot;query&quot;, dataType = &quot;string&quot;),</span><br><span class="line">        @ApiImplicitParam(name = &quot;userPwd&quot;, value = &quot;密码&quot;, required = false, paramType = &quot;query&quot;, dataType = &quot;string&quot;), </span><br><span class="line">&#125;)</span><br><span class="line">@RequestMapping(&quot;registered&quot;)</span><br><span class="line">public ResponseData registered(String userAccount, String userPwd,String logo,String qianming,String phone) &#123;</span><br><span class="line">    try &#123;</span><br><span class="line">        UserInfo user = userInfoMapper.getUserByAccount(userAccount);</span><br><span class="line">        if (null == user) &#123;</span><br><span class="line">            UserInfo demoUser = new UserInfo();</span><br><span class="line">            demoUser.setName(userAccount);</span><br><span class="line">            demoUser.setPassword(userPwd);</span><br><span class="line">            demoUser.setPhone(phone);</span><br><span class="line"></span><br><span class="line">            userInfoMapper.insertIgnoreNull(demoUser);</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            return new ResponseData().fail(10001, &quot;账号已存在，请更换。&quot;);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125; catch (Exception e) &#123;</span><br><span class="line">        e.printStackTrace();</span><br><span class="line">        return new ResponseData().fail(500, e.getMessage());</span><br><span class="line">    &#125;</span><br><span class="line">    return new ResponseData().success();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>前端</p>
 <p>OkGo.<String>post(Myapi.mainHost+Myapi.regiestUrl)表示：网络请求地址</p>
@@ -435,7 +253,7 @@
 <p>​    </p>
 <p>4.班费清单列表</p>
 <p>后端（controller层）</p>
-<figure class="highlight reasonml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs reasonml">@<span class="hljs-constructor">ApiOperation(<span class="hljs-params">value</span> = <span class="hljs-string">&quot;Read&quot;</span>, <span class="hljs-params">httpMethod</span> = <span class="hljs-string">&quot;POST&quot;</span>, <span class="hljs-params">notes</span> = <span class="hljs-string">&quot;加载数据&quot;</span>, <span class="hljs-params">response</span> = Result.<span class="hljs-params">class</span>)</span><br>@<span class="hljs-constructor">RequestMapping(<span class="hljs-string">&quot;list&quot;</span>)</span><br>public Result <span class="hljs-built_in">list</span><span class="hljs-constructor">All()</span> &#123;<br>   <span class="hljs-keyword">try</span> &#123;<br>      List&lt;BanfeiInfo&gt; <span class="hljs-built_in">list</span> = banfeiInfoMapper.<span class="hljs-built_in">list</span><span class="hljs-constructor">All()</span>;<br>        return <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">ResultGenerator</span>.</span></span>gen<span class="hljs-constructor">SuccessResult(<span class="hljs-params">list</span>)</span>;<br>    &#125; catch (Exception e) &#123;<br>        e.print<span class="hljs-constructor">StackTrace()</span>;<br>        return <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">ResultGenerator</span>.</span></span>gen<span class="hljs-constructor">ErrorResult(500,<span class="hljs-params">e</span>.<span class="hljs-params">getMessage</span>()</span>);<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">@ApiOperation(value = &quot;Read&quot;, httpMethod = &quot;POST&quot;, notes = &quot;加载数据&quot;, response = Result.class)</span><br><span class="line">@RequestMapping(&quot;list&quot;)</span><br><span class="line">public Result listAll() &#123;</span><br><span class="line">   try &#123;</span><br><span class="line">      List&lt;BanfeiInfo&gt; list = banfeiInfoMapper.listAll();</span><br><span class="line">        return ResultGenerator.genSuccessResult(list);</span><br><span class="line">    &#125; catch (Exception e) &#123;</span><br><span class="line">        e.printStackTrace();</span><br><span class="line">        return ResultGenerator.genErrorResult(500,e.getMessage());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>前端</p>
 <p>private void getAllData() {<br>  OkGo.<String><em>post</em>(Myapi.<em>mainHost</em>+ Myapi.<em>listAllbanfeiInfoUrl</em>)<br>       .execute(new StringCallback() {<br>         @Override<br>         public void onSuccess(Response<String> response) {<br>           Log.<em>e</em>(“班费列表”,response.body());<br>           BanFeiBean banFeiBean &#x3D; JSONUtils.<em>parserObject</em>(response.body(),BanFeiBean.class);<br>           int code &#x3D; banFeiBean.getResultCode();</p>
@@ -444,32 +262,32 @@
 <p>OkGo.<String>post(Myapi.mainHost+ Myapi.listAllbanfeiInfoUrl)接口，无需传入参数，因为查询的是所有的班费列表通过Recyclerview控件展示列表</p>
 <h3 id="3-5技术难点"><a href="#3-5技术难点" class="headerlink" title="3.5技术难点"></a>3.5技术难点</h3><p>通过下载安装包，真机运行班费记录app（脱离usb限制），通过通过签名jks的方式实现。</p>
 <h2 id="4测试及出现过的问题及其解决方法"><a href="#4测试及出现过的问题及其解决方法" class="headerlink" title="4测试及出现过的问题及其解决方法"></a>4测试及出现过的问题及其解决方法</h2><h3 id="4-1测试界面"><a href="#4-1测试界面" class="headerlink" title="4.1测试界面"></a>4.1测试界面</h3><p>1.登录界面（三种身份选择）</p>
-<p><img src="/img/Android-project/clip_image008.gif" srcset="/img/loading.gif" lazyload alt="登录界面"></p>
+<p><img src="/img/Android-project/clip_image008.gif" alt="登录界面"></p>
 <p>2.注册界面（仅可注册班级成员，记账员及班委为数据库设置）</p>
-<p><img src="/img/Android-project/clip_image010.gif" srcset="/img/loading.gif" lazyload alt="注册界面"></p>
+<p><img src="/img/Android-project/clip_image010.gif" alt="注册界面"></p>
 <p>4.主页（记账员身份进入）</p>
-<p><img src="/img/Android-project/clip_image012.gif" srcset="/img/loading.gif" lazyload alt="主页"></p>
+<p><img src="/img/Android-project/clip_image012.gif" alt="主页"></p>
 <p>5.记账员发布账单</p>
-<p><img src="/img/Android-project/clip_image014.gif" srcset="/img/loading.gif" lazyload alt="记账"></p>
-<p><img src="/img/Android-project/clip_image016.gif" srcset="/img/loading.gif" lazyload alt="账单已更新"></p>
+<p><img src="/img/Android-project/clip_image014.gif" alt="记账"></p>
+<p><img src="/img/Android-project/clip_image016.gif" alt="账单已更新"></p>
 <p>6.提出质疑</p>
-<p><img src="/img/Android-project/clip_image018.gif" srcset="/img/loading.gif" lazyload alt=" 班级成员发布质疑"></p>
-<p><img src="/img/Android-project/clip_image020.gif" srcset="/img/loading.gif" lazyload alt="质疑已公布"></p>
+<p><img src="/img/Android-project/clip_image018.gif" alt=" 班级成员发布质疑"></p>
+<p><img src="/img/Android-project/clip_image020.gif" alt="质疑已公布"></p>
 <p>6.班委回复质疑</p>
-<p><img src="/img/Android-project/clip_image022.gif" srcset="/img/loading.gif" lazyload alt="班委回复质疑"></p>
-<p><img src="/img/Android-project/clip_image024.gif" srcset="/img/loading.gif" lazyload alt="质疑已回复"></p>
+<p><img src="/img/Android-project/clip_image022.gif" alt="班委回复质疑"></p>
+<p><img src="/img/Android-project/clip_image024.gif" alt="质疑已回复"></p>
 <p>8.班级成员通过质疑</p>
-<p><img src="/img/Android-project/clip_image026.gif" srcset="/img/loading.gif" lazyload alt="班级半数以上确认"></p>
+<p><img src="/img/Android-project/clip_image026.gif" alt="班级半数以上确认"></p>
 <p>9.质疑人close质疑（未超过半数班级成员确认关闭无效）</p>
-<p><img src="/img/Android-project/clip_image028.gif" srcset="/img/loading.gif" lazyload alt="质疑人close质疑"></p>
+<p><img src="/img/Android-project/clip_image028.gif" alt="质疑人close质疑"></p>
 <p>10.质疑已close</p>
-<p><img src="/img/Android-project/clip_image030.gif" srcset="/img/loading.gif" lazyload alt="质疑已关闭"></p>
+<p><img src="/img/Android-project/clip_image030.gif" alt="质疑已关闭"></p>
 <p>  11.真机安装包下载及运行</p>
-<p><img src="/img/Android-project/clip_image031.gif" srcset="/img/loading.gif" lazyload alt="真机安装包下载及运行 "><img src="/img/Android-project/clip_image033.gif" srcset="/img/loading.gif" lazyload alt="img"></p>
+<p><img src="/img/Android-project/clip_image031.gif" alt="真机安装包下载及运行 "><img src="/img/Android-project/clip_image033.gif" alt="img"></p>
 <h3 id="4-2出现的问题及解决方案"><a href="#4-2出现的问题及解决方案" class="headerlink" title="4.2出现的问题及解决方案"></a>4.2出现的问题及解决方案</h3><p>​    1.Android Studio开发的客户端打Debug包手机无法安装</p>
-<p><img src="/img/Android-project/clip_image035.gif" srcset="/img/loading.gif" lazyload alt=" 安装失败"></p>
+<p><img src="/img/Android-project/clip_image035.gif" alt=" 安装失败"></p>
 <p>​    解决方案：通过签名jks生成release包，最终实现apk打包安装</p>
-<p><img src="/img/Android-project/clip_image037.gif" srcset="/img/loading.gif" lazyload alt="生成jks文件"></p>
+<p><img src="/img/Android-project/clip_image037.gif" alt="生成jks文件"></p>
 <p>​    2.云服务器88端口无法访问（端口已开放）</p>
 <p>​    解决方案：查阅资料意识到可能是服务器内的系统放火墙未放通导致，使用systemctl stop firewalld 命令来进行关闭，最终解决问题。</p>
 <h2 id="5-总结"><a href="#5-总结" class="headerlink" title="5 总结"></a>5 总结</h2><h3 id="5-1全面总结"><a href="#5-1全面总结" class="headerlink" title="5.1全面总结"></a>5.1全面总结</h3><p>​    本实践采用前后端分离模式开发，基于spring boot的服务器端，Android Studio的客户端实现项目功能。大体实现如下功能：</p>
@@ -479,7 +297,7 @@
 <p>在此基础上进行了云部署，成功将服务器端部署到腾讯云服务器上运行，此外客户端通过jks签名打release包安装到了真机运行。</p>
 <p>本项目采用git进行版本控制，仓库地址如下:</p>
 <p><a target="_blank" rel="noopener" href="https://github.com/ChengRui79/Android-charge-account.git">https://github.com/ChengRui79/Android-charge-account.git</a></p>
-<p><img src="/img/Android-project/clip_image039.gif" srcset="/img/loading.gif" lazyload alt="github仓库"></p>
+<p><img src="/img/Android-project/clip_image039.gif" alt="github仓库"></p>
 <h3 id="5-2未完成的部分"><a href="#5-2未完成的部分" class="headerlink" title="5.2未完成的部分"></a>5.2未完成的部分</h3><p>​    未完成的部分有：个人中心（对个人的注册信息及质疑，通过记录进行展示）；多班级支持（可实现多个班级共同使用，即分班级对进行班费使用进行记录）；记录归档功能</p>
 <h3 id="5-3收获"><a href="#5-3收获" class="headerlink" title="5.3收获"></a>5.3收获</h3><p>​    对spring boot的mvc模式开发有了更熟练的掌握，通过前后端分离的采用，使我初步接触了Android客户端与IntelliJ IDEA服务器端基于Okthhp通信的主流网络通信框架。同时也在云平台技术的使用上更加深入（这是我在腾讯云上部署的第二个项目，第一个项目是一个java web项目）相对来说在本次部署难度大了很多，但同时也觉得收获颇丰。当然在前端设计上考虑略有不足，例如在用户注册页面，role显然不适合选择，由于前期分析不足，未考虑权限的特殊性，导致注册页面设计不合理，后删去role选择功能，默认班级成员。希望在以后的学习过程中多多接触新技术，不断提升能力。</p>
 <h2 id="6参考文献"><a href="#6参考文献" class="headerlink" title="6参考文献"></a>6参考文献</h2><p>[1] Android客户端连接服务器- OKHttp的简单实用方法[ED&#x2F;OL]：<a target="_blank" rel="noopener" href="https://blog.csdn.net/m0_47761892/article/details/107630036">https://blog.csdn.net/m0_47761892/article/details/107630036</a> </p>
@@ -490,441 +308,157 @@
 <p>[6] Spring Boot 接入[ED&#x2F;OL]：<a target="_blank" rel="noopener" href="https://cloud.tencent.com/document/product/1416/56031">https://cloud.tencent.com/document/product/1416/56031</a></p>
 <p>[7] Android中Glide的使用[ED&#x2F;OL]：<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_57542177/article/details/124074397?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522167204971716782429745671%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=167204971716782429745671&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-124074397-null-null.142">https://blog.csdn.net/weixin_57542177/article/details/124074397?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522167204971716782429745671%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&amp;request_id=167204971716782429745671&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-124074397-null-null.142</a></p>
 
-                
-              </div>
-            
-            <hr/>
-            <div>
-              <div class="post-metas my-3">
-  
-    <div class="post-meta mr-3 d-flex align-items-center">
-      <i class="iconfont icon-category"></i>
       
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://zcsry.cn/2023/04/02/Android-project/" data-id="clicfiw290005g8no7lu22ysu" data-title="Android_project" class="article-share-link">分享</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Android/" rel="tag">Android</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/springboot/" rel="tag">springboot</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB/" rel="tag">前后端分离</a></li></ul>
 
-<span class="category-chains">
-  
+    </footer>
+  </div>
   
     
-      <span class="category-chain">
+<nav id="article-nav">
+  
+    <a href="/2023/04/02/The%20Art%20of%20Software%20Testing/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">前一篇</strong>
+      <div class="article-nav-title">
         
-  <a href="/categories/project/" class="category-chain-item">project</a>
+          the reaction to The Art of Software Testing
+        
+      </div>
+    </a>
   
   
-    <span>></span>
+    <a href="/2023/03/28/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">后一篇</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
     
-  <a href="/categories/project/Android/" class="category-chain-item">Android</a>
-  
-  
-
-  
-
-      </span>
-    
-  
-</span>
-
+  <div class="widget-wrap">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/AT/">AT</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Python/">Python</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Python/Django/">Django</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/others/">others</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/project/">project</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/project/Android/">Android</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/project/ITS/">ITS</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/project/UML/">UML</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/project/java/">java</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/reaction/">reaction</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/reaction/Software-Testing/">Software Testing</a></li></ul></li></ul>
     </div>
-  
-  
-    <div class="post-meta">
-      <i class="iconfont icon-tags"></i>
-      
-        <a href="/tags/springboot/">#springboot</a>
-      
-        <a href="/tags/Android/">#Android</a>
-      
-        <a href="/tags/%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB/">#前后端分离</a>
-      
-    </div>
-  
-</div>
-
-
-              
-  
-
-  <div class="license-box my-3">
-    <div class="license-title">
-      <div>Android_project</div>
-      <div>https://zcsry.cn/2023/04/02/Android-project/</div>
-    </div>
-    <div class="license-meta">
-      
-        <div class="license-meta-item">
-          <div>作者</div>
-          <div>CR</div>
-        </div>
-      
-      
-        <div class="license-meta-item license-meta-date">
-          <div>发布于</div>
-          <div>2023年4月2日</div>
-        </div>
-      
-      
-      
-        <div class="license-meta-item">
-          <div>许可协议</div>
-          <div>
-            
-              
-              
-                <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
-                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
-                    <i class="iconfont icon-by"></i>
-                  </span>
-                </a>
-              
-            
-          </div>
-        </div>
-      
-    </div>
-    <div class="license-icon iconfont"></div>
   </div>
 
 
-
-              
-                <div class="post-prevnext my-3">
-                  <article class="post-prev col-6">
-                    
-                    
-                      <a href="/2023/04/02/The%20Art%20of%20Software%20Testing/" title="the reaction to The Art of Software Testing">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">the reaction to The Art of Software Testing</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
-                  </article>
-                  <article class="post-next col-6">
-                    
-                    
-                      <a href="/2023/03/28/hello-world/" title="Hello World">
-                        <span class="hidden-mobile">Hello World</span>
-                        <span class="visible-mobile">下一篇</span>
-                        <i class="iconfont icon-arrowright"></i>
-                      </a>
-                    
-                  </article>
-                </div>
-              
-            </div>
-
-            
   
-  
-    <article id="comments" lazyload>
-      
-  <div id="valine"></div>
-  <script type="text/javascript">
-    Fluid.utils.loadComments('#valine', function() {
-      Fluid.utils.createScript('https://lib.baomitu.com/valine/1.5.1/Valine.min.js', function() {
-        var options = Object.assign(
-          {"appId":"NZzmWHo4vLeDsTh3MaGJBfT1-gzGzoHsz","appKey":"EaF7VkHeBkgVwTLy7IHYmPIs","path":"window.location.pathname","placeholder":"留下你的评论吧","avatar":"retro","meta":["nick","mail","link"],"requiredFields":[],"pageSize":5,"lang":"zh-CN","highlight":false,"recordIP":false,"serverURLs":"https://nzzmwho4.lc-cn-n1-shared.com","emojiCDN":"https://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/","emojiMaps":null,"enableQQ":false,"enable":true},
-          {
-            el: "#valine",
-            path: window.location.pathname
-          }
-        )
-        new Valine(options);
-        Fluid.utils.waitElementVisible('#valine .vcontent', () => {
-          var imgSelector = '#valine .vcontent img:not(.vemoji)';
-          Fluid.plugins.imageCaption(imgSelector);
-          Fluid.plugins.fancyBox(imgSelector);
-        })
-      });
-    });
-  </script>
-  <noscript>Please enable JavaScript to view the comments</noscript>
-
-
-    </article>
-  
-
-
-          </article>
-        </div>
-      </div>
-    </div>
-
-    <div class="side-col d-none d-lg-block col-lg-2">
-      
-  <aside class="sidebar" style="margin-left: -1rem">
-    <div id="toc">
-  <p class="toc-header">
-    <i class="iconfont icon-list"></i>
-    <span>目录</span>
-  </p>
-  <div class="toc-body" id="toc-body"></div>
-</div>
-
-
-
-  </aside>
-
-
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/AA%E6%8B%BC%E5%9B%A2/" rel="tag">AA拼团</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/AT/" rel="tag">AT</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Android/" rel="tag">Android</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Django/" rel="tag">Django</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ITS/" rel="tag">ITS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ImageHost/" rel="tag">ImageHost</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python/" rel="tag">Python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Software-Testing/" rel="tag">Software Testing</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/UML/" rel="tag">UML</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/docker/" rel="tag">docker</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/" rel="tag">java</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/springboot/" rel="tag">springboot</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB/" rel="tag">前后端分离</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8A%A8%E6%80%81%E7%BD%91%E9%A1%B5%E9%98%B2%E7%AF%A1%E6%94%B9/" rel="tag">动态网页防篡改</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%9B%BE%E5%BA%8A/" rel="tag">图床</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF/" rel="tag">宝塔面板</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%A0%A1%E5%9B%AD%E5%A4%B1%E7%89%A9%E6%8B%9B%E9%A2%86%E7%B3%BB%E7%BB%9F/" rel="tag">校园失物招领系统</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%AF%95%E5%8D%B7%E5%88%86%E5%8F%91%E5%AE%89%E5%85%A8%E7%B3%BB%E7%BB%9F/" rel="tag">试卷分发安全系统</a></li></ul>
     </div>
   </div>
-</div>
-
-
-
 
 
   
-
-
-
-  
-
-
-
-  
-
-
-
-  
-
-
-
-  
-
-
-
-
-
-
-
     
-
-    
-      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
-        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
-      </a>
-    
-
-    
-      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
-     aria-hidden="true">
-  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header text-center">
-        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
-        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body mx-3">
-        <div class="md-form mb-5">
-          <input type="text" id="local-search-input" class="form-control validate">
-          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
-        </div>
-        <div class="list-group" id="local-search-result"></div>
-      </div>
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/AA%E6%8B%BC%E5%9B%A2/" style="font-size: 10px;">AA拼团</a> <a href="/tags/AT/" style="font-size: 20px;">AT</a> <a href="/tags/Android/" style="font-size: 10px;">Android</a> <a href="/tags/Django/" style="font-size: 10px;">Django</a> <a href="/tags/ITS/" style="font-size: 15px;">ITS</a> <a href="/tags/ImageHost/" style="font-size: 10px;">ImageHost</a> <a href="/tags/Python/" style="font-size: 10px;">Python</a> <a href="/tags/Software-Testing/" style="font-size: 10px;">Software Testing</a> <a href="/tags/UML/" style="font-size: 10px;">UML</a> <a href="/tags/docker/" style="font-size: 10px;">docker</a> <a href="/tags/java/" style="font-size: 10px;">java</a> <a href="/tags/springboot/" style="font-size: 15px;">springboot</a> <a href="/tags/%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB/" style="font-size: 10px;">前后端分离</a> <a href="/tags/%E5%8A%A8%E6%80%81%E7%BD%91%E9%A1%B5%E9%98%B2%E7%AF%A1%E6%94%B9/" style="font-size: 10px;">动态网页防篡改</a> <a href="/tags/%E5%9B%BE%E5%BA%8A/" style="font-size: 10px;">图床</a> <a href="/tags/%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF/" style="font-size: 10px;">宝塔面板</a> <a href="/tags/%E6%A0%A1%E5%9B%AD%E5%A4%B1%E7%89%A9%E6%8B%9B%E9%A2%86%E7%B3%BB%E7%BB%9F/" style="font-size: 10px;">校园失物招领系统</a> <a href="/tags/%E8%AF%95%E5%8D%B7%E5%88%86%E5%8F%91%E5%AE%89%E5%85%A8%E7%B3%BB%E7%BB%9F/" style="font-size: 10px;">试卷分发安全系统</a>
     </div>
   </div>
-</div>
 
-    
-
-    
-  </main>
-
-  <footer>
-    <div class="footer-inner">
   
-    <div class="footer-content">
-       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/05/">五月 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/04/">四月 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/03/">三月 2023</a></li></ul>
     </div>
-  
-  
-    <div class="statistics">
-  
-  
+  </div>
+
 
   
     
-      <span id="leancloud-site-pv-container" style="display: none">
-        本Blog总访问量 
-        <span id="leancloud-site-pv"></span>
-         次
-      </span>
-    
-    
-      <span id="leancloud-site-uv-container" style="display: none">
-        总访客数 
-        <span id="leancloud-site-uv"></span>
-         人
-      </span>
-    
-    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2023/05/29/Anti-tampering%20of%20dynamic%20web%20pages(%E5%8A%A8%E6%80%81%E7%BD%91%E9%A1%B5%E9%98%B2%E7%AF%A1%E6%94%B9%EF%BC%89/">Anti-tampering of dynamic web pages(动态网页防篡改）</a>
+          </li>
+        
+          <li>
+            <a href="/2023/05/07/Docker/">docker</a>
+          </li>
+        
+          <li>
+            <a href="/2023/04/22/Test%20paper%20distribution%20system/">system</a>
+          </li>
+        
+          <li>
+            <a href="/2023/04/05/%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF%E4%BD%BF%E7%94%A8/">宝塔面板使用</a>
+          </li>
+        
+          <li>
+            <a href="/2023/04/05/ImageHost/">ImageHost</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
 
   
-</div>
-
+</aside>
+        
+      </div>
+      <footer id="footer">
   
-  
-  
-</div>
-
-  </footer>
-
-  <!-- Scripts -->
-  
-  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
-  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
-
-  <script>
-    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
-    NProgress.start()
-    window.addEventListener('load', function() {
-      NProgress.done();
-    })
-  </script>
-
-
-<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
-<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
-<script  src="/js/events.js" ></script>
-<script  src="/js/plugins.js" ></script>
-
-
-  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
-  <script>
-    (function (window, document) {
-      var typing = Fluid.plugins.typing;
-      var subtitle = document.getElementById('subtitle');
-      if (!subtitle || !typing) {
-        return;
-      }
-      var text = subtitle.getAttribute('data-typed-text');
+  <div class="outer">
+    <div id="footer-info" class="inner">
       
-        typing(text);
-      
-    })(window, document);
-  </script>
+      &copy; 2023 CR<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
 
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
 
 
 
   
-    <script  src="/js/img-lazyload.js" ></script>
-  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
 
 
 
 
-  
-<script>
-  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
-    var toc = jQuery('#toc');
-    if (toc.length === 0 || !window.tocbot) { return; }
-    var boardCtn = jQuery('#board-ctn');
-    var boardTop = boardCtn.offset().top;
-
-    window.tocbot.init(Object.assign({
-      tocSelector     : '#toc-body',
-      contentSelector : '.markdown-body',
-      linkClass       : 'tocbot-link',
-      activeLinkClass : 'tocbot-active-link',
-      listClass       : 'tocbot-list',
-      isCollapsedClass: 'tocbot-is-collapsed',
-      collapsibleClass: 'tocbot-is-collapsible',
-      scrollSmooth    : true,
-      includeTitleTags: true,
-      headingsOffset  : -boardTop,
-    }, CONFIG.toc));
-    if (toc.find('.toc-list-item').length > 0) {
-      toc.css('visibility', 'visible');
-    }
-
-    Fluid.events.registerRefreshCallback(function() {
-      if ('tocbot' in window) {
-        tocbot.refresh();
-        var toc = jQuery('#toc');
-        if (toc.length === 0 || !tocbot) {
-          return;
-        }
-        if (toc.find('.toc-list-item').length > 0) {
-          toc.css('visibility', 'visible');
-        }
-      }
-    });
-  });
-</script>
-
-
-  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
-
-  <script>Fluid.plugins.codeWidget();</script>
-
-
-  
-<script>
-  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
-    window.anchors.options = {
-      placement: CONFIG.anchorjs.placement,
-      visible  : CONFIG.anchorjs.visible
-    };
-    if (CONFIG.anchorjs.icon) {
-      window.anchors.options.icon = CONFIG.anchorjs.icon;
-    }
-    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
-    var res = [];
-    for (var item of el) {
-      res.push('.markdown-body > ' + item.trim());
-    }
-    if (CONFIG.anchorjs.placement === 'left') {
-      window.anchors.options.class = 'anchorjs-link-left';
-    }
-    window.anchors.add(res.join(', '));
-
-    Fluid.events.registerRefreshCallback(function() {
-      if ('anchors' in window) {
-        anchors.removeAll();
-        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
-        var res = [];
-        for (var item of el) {
-          res.push('.markdown-body > ' + item.trim());
-        }
-        if (CONFIG.anchorjs.placement === 'left') {
-          anchors.options.class = 'anchorjs-link-left';
-        }
-        anchors.add(res.join(', '));
-      }
-    });
-  });
-</script>
-
-
-  
-<script>
-  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
-    Fluid.plugins.fancyBox();
-  });
-</script>
-
-
-  <script>Fluid.plugins.imageCaption();</script>
-
-  <script defer src="/js/leancloud.js" ></script>
-
-  <script  src="/js/local-search.js" ></script>
+<script src="/js/script.js"></script>
 
 
 
 
 
-<!-- 主题的启动项，将它保持在最底部 -->
-<!-- the boot of the theme, keep it at the bottom -->
-<script  src="/js/boot.js" ></script>
-
-
-  
-
-  <noscript>
-    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
-  </noscript>
+  </div>
 </body>
 </html>
