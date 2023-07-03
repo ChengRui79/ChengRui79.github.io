@@ -154,34 +154,6 @@
   </url>
   
   <url>
-    <loc>https://zcsry.cn/tags/docker/</loc>
-    <lastmod>2023-07-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://zcsry.cn/tags/AT/</loc>
-    <lastmod>2023-07-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://zcsry.cn/tags/ImageHost/</loc>
-    <lastmod>2023-07-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://zcsry.cn/tags/%E5%9B%BE%E5%BA%8A/</loc>
-    <lastmod>2023-07-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://zcsry.cn/tags/ITS/</loc>
     <lastmod>2023-07-03</lastmod>
     <changefreq>weekly</changefreq>
@@ -204,6 +176,34 @@
   
   <url>
     <loc>https://zcsry.cn/tags/%E5%8A%A8%E6%80%81%E7%BD%91%E9%A1%B5%E9%98%B2%E7%AF%A1%E6%94%B9/</loc>
+    <lastmod>2023-07-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zcsry.cn/tags/docker/</loc>
+    <lastmod>2023-07-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zcsry.cn/tags/AT/</loc>
+    <lastmod>2023-07-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zcsry.cn/tags/ImageHost/</loc>
+    <lastmod>2023-07-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zcsry.cn/tags/%E5%9B%BE%E5%BA%8A/</loc>
     <lastmod>2023-07-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -254,6 +254,13 @@
   </url>
   
   <url>
+    <loc>https://zcsry.cn/categories/Python/</loc>
+    <lastmod>2023-07-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://zcsry.cn/categories/AT/</loc>
     <lastmod>2023-07-03</lastmod>
     <changefreq>weekly</changefreq>
@@ -268,35 +275,7 @@
   </url>
   
   <url>
-    <loc>https://zcsry.cn/categories/Python/</loc>
-    <lastmod>2023-07-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://zcsry.cn/categories/project/ITS/</loc>
-    <lastmod>2023-07-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://zcsry.cn/categories/project/Android/</loc>
-    <lastmod>2023-07-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://zcsry.cn/categories/reaction/</loc>
-    <lastmod>2023-07-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://zcsry.cn/categories/others/</loc>
     <lastmod>2023-07-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -310,7 +289,14 @@
   </url>
   
   <url>
-    <loc>https://zcsry.cn/categories/reaction/Software-Testing/</loc>
+    <loc>https://zcsry.cn/categories/project/ITS/</loc>
+    <lastmod>2023-07-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zcsry.cn/categories/reaction/</loc>
     <lastmod>2023-07-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -318,6 +304,20 @@
   
   <url>
     <loc>https://zcsry.cn/categories/project/UML/</loc>
+    <lastmod>2023-07-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zcsry.cn/categories/others/</loc>
+    <lastmod>2023-07-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zcsry.cn/categories/reaction/Software-Testing/</loc>
     <lastmod>2023-07-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
