@@ -246,20 +246,6 @@
   </url>
   
   <url>
-    <loc>https://zcsry.cn/tags/SSM/</loc>
-    <lastmod>2023-08-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://zcsry.cn/tags/%E9%93%81%E8%B7%AF%E5%94%AE%E7%A5%A8%E7%B3%BB%E7%BB%9F/</loc>
-    <lastmod>2023-08-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://zcsry.cn/tags/%E8%AF%95%E5%8D%B7%E5%88%86%E5%8F%91%E5%AE%89%E5%85%A8%E7%B3%BB%E7%BB%9F/</loc>
     <lastmod>2023-08-22</lastmod>
     <changefreq>weekly</changefreq>
@@ -268,6 +254,20 @@
   
   <url>
     <loc>https://zcsry.cn/tags/Software-Testing/</loc>
+    <lastmod>2023-08-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zcsry.cn/tags/SSM/</loc>
+    <lastmod>2023-08-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zcsry.cn/tags/%E9%93%81%E8%B7%AF%E5%94%AE%E7%A5%A8%E7%B3%BB%E7%BB%9F/</loc>
     <lastmod>2023-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -325,13 +325,6 @@
   </url>
   
   <url>
-    <loc>https://zcsry.cn/categories/project/Android/</loc>
-    <lastmod>2023-08-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://zcsry.cn/categories/project/ITS/</loc>
     <lastmod>2023-08-22</lastmod>
     <changefreq>weekly</changefreq>
@@ -339,14 +332,7 @@
   </url>
   
   <url>
-    <loc>https://zcsry.cn/categories/Python/Django/</loc>
-    <lastmod>2023-08-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://zcsry.cn/categories/others/</loc>
+    <loc>https://zcsry.cn/categories/project/Android/</loc>
     <lastmod>2023-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -360,7 +346,7 @@
   </url>
   
   <url>
-    <loc>https://zcsry.cn/categories/project/UML/</loc>
+    <loc>https://zcsry.cn/categories/Python/Django/</loc>
     <lastmod>2023-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -368,6 +354,20 @@
   
   <url>
     <loc>https://zcsry.cn/categories/reaction/Software-Testing/</loc>
+    <lastmod>2023-08-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zcsry.cn/categories/others/</loc>
+    <lastmod>2023-08-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zcsry.cn/categories/project/UML/</loc>
     <lastmod>2023-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
