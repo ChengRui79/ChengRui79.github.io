@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://zcsry.cn/2023/01/22/%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97/</loc>
+    
+    <lastmod>2023-09-18</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://zcsry.cn/2023/04/02/Android-project/</loc>
     
     <lastmod>2023-09-18</lastmod>
@@ -274,6 +283,13 @@
   </url>
   
   <url>
+    <loc>https://zcsry.cn/tags/%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF/</loc>
+    <lastmod>2023-09-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://zcsry.cn/tags/UML/</loc>
     <lastmod>2023-09-18</lastmod>
     <changefreq>weekly</changefreq>
@@ -288,7 +304,14 @@
   </url>
   
   <url>
-    <loc>https://zcsry.cn/tags/%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF/</loc>
+    <loc>https://zcsry.cn/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
+    <lastmod>2023-09-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zcsry.cn/tags/%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97/</loc>
     <lastmod>2023-09-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -339,14 +362,21 @@
   </url>
   
   <url>
-    <loc>https://zcsry.cn/categories/project/ITS/</loc>
+    <loc>https://zcsry.cn/categories/Python/Django/</loc>
     <lastmod>2023-09-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://zcsry.cn/categories/Python/Django/</loc>
+    <loc>https://zcsry.cn/categories/reaction/Software-Testing/</loc>
+    <lastmod>2023-09-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zcsry.cn/categories/project/ITS/</loc>
     <lastmod>2023-09-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -367,7 +397,14 @@
   </url>
   
   <url>
-    <loc>https://zcsry.cn/categories/reaction/Software-Testing/</loc>
+    <loc>https://zcsry.cn/categories/study/</loc>
+    <lastmod>2023-09-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zcsry.cn/categories/study/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
     <lastmod>2023-09-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
